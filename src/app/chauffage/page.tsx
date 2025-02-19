@@ -3,8 +3,8 @@ import Menu from "@/components/Menu";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
-import certifications from "../../components/Certifications";
 import Certifications from "../../components/Certifications";
+import HeatingSolutions from "@/components/HeatingSolutions";
 
 export default function page() {
   return (
@@ -30,18 +30,18 @@ export default function page() {
         </div>
       </div>
 
-      <div className="flex container mx-auto justify-center items-center mt-12 gap-20">
+      <div className="flex container mx-auto justify-center items-center mt-12 gap-14">
         <Image
           src="/chauffage.png"
           alt="Installation Plomberie"
           width={500}
           height={500}
-          className="w-1/3 h-full object-cover rounded-lg"
+          className="w-[36%] h-full object-cover rounded-lg"
         />
         <div className=" space-y-4 max-w-xl">
           <div className="flex items-center">
-            <div className="bg-yellow-500 h-[0.15rem] w-20"></div>
-            <p className="text-yellow-500 ml-3 font-bold">CHAUDIÈRE</p>
+            <p className="text-yellow-500  font-bold">CHAUDIÈRE</p>
+            <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
           </div>
           <h2 className="  text-3xl font-extrabold mt-6 max-w-xl">
             Vente et installation de systèmes de chauffage à Valence et dans la
@@ -94,7 +94,34 @@ export default function page() {
         </div>
       </div>
 
-      {/* <Certifications /> */}
+      <Certifications />
+      <div className="flex container mx-auto justify-center items-center my-12 gap-14">
+        <div className="space-y-4  max-w-5xl mx-auto">
+          <div className="flex items-center justify-center">
+            <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
+            <p className="text-yellow-500 font-bold">CHAUDIÈRE</p>
+            <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
+          </div>
+          <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
+            Vente et installation de systèmes de chauffage à Valence et dans la
+            Drôme.
+          </h2>
+          <p className="text-center">
+            {`Les pannes de chauffage surviennent souvent au moment le moins opportun. Les experts chauffagistes d’Eco Thermes sont disponibles pour intervenir rapidement à Valence et ses environs, que ce soit pour réparer votre chaudière, votre pompe à chaleur ou votre poêle.`}
+          </p>
+          <p className="text-center">
+            {`Faire entretenir votre installation garantit son efficacité et prolonge sa durée de vie. Notre équipe s'assure de réaliser toutes les vérifications nécessaires pour maintenir vos équipements en parfait état de fonctionnement.`}
+          </p>
+          <p className="text-center">
+            {`Nos tarifs pour le dépannage sont de 70 € / heure HT pour les chaudières et poêles, et de 85 € / heure HT pour les pompes à chaleur.`}
+          </p>
+          <p className="text-center">
+            {`Contactez-nous dès maintenant pour bénéficier de notre expertise en installation et maintenance de chauffage à Valence.`}
+          </p>
+        </div>
+      </div>
+      <HeatingSolutions />
+
       <Footer />
     </>
   );
