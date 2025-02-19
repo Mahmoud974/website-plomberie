@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/clim.jpg"
+          src="/clima.jpg"
           alt="Installation Plomberie"
           layout="fill"
           objectFit="cover"
