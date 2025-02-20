@@ -67,7 +67,7 @@ export function MenuMobile() {
           </li>
           <li>
             <Link
-              href="/realisation"
+              href="/realisations"
               className="hover:underline text-2xl hover:text-yellow-500"
             >
               NOS RÉALISATIONS
@@ -75,7 +75,7 @@ export function MenuMobile() {
           </li>
           <li>
             <Link
-              href="/a-propos"
+              href="/about"
               className="hover:underline text-2xl hover:text-yellow-500"
             >
               À PROPOS
@@ -83,10 +83,10 @@ export function MenuMobile() {
           </li>
           <li>
             <Link
-              href="/contacts"
+              href="/contact"
               className="hover:underline text-2xl hover:text-yellow-500"
             >
-              CONTACTS
+              CONTACT
             </Link>
           </li>
         </ul>

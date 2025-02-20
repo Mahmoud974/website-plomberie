@@ -19,7 +19,6 @@ export function MiniMenu() {
 
       <span className="text-white">|</span>
 
-      {/* Prestations */}
       <MenubarMenu>
         <MenubarTrigger>PRESTATIONS</MenubarTrigger>
         <MenubarContent className="bg-black text-white">
@@ -36,12 +35,6 @@ export function MiniMenu() {
             <MenubarItem>Plomberie</MenubarItem>
           </Link>
         </MenubarContent>
-      </MenubarMenu>
-
-      <span className="text-white">|</span>
-
-      <MenubarMenu>
-        <MenubarTrigger>ACTUALITÉS - PRIME POMPE À CHALEUR</MenubarTrigger>
       </MenubarMenu>
 
       <span className="text-white">|</span>

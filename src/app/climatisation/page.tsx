@@ -30,13 +30,13 @@ export default function page() {
         </div>
       </div>
 
-      <div className="flex container mx-auto justify-center items-center mt-12 gap-14">
+      <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
           src="/clim-2.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
-          className="w-[36%] h-full object-cover rounded-lg"
+          className="lg:w-[36%] h-full object-cover rounded-lg"
         />
         <div className="space-y-6 max-w-xl">
           {/* Titre Section */}
@@ -73,9 +73,9 @@ export default function page() {
           </Button>
         </div>
       </div>
-      <div className="container mx-auto mt-11">
+      <div className="container lg:px-0 px-8  mx-auto mt-11">
         {" "}
-        <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
+        <h5 className="text-2xl font-extrabold lg:mt-6 mb-3 max-w-xl mx-auto text-center">
           Le climatiseur gainable : le choix de la quasi-invisibilité
         </h5>
         <p className="text-center">
@@ -85,7 +85,7 @@ export default function page() {
 
       <Certifications />
       <div className="flex container mx-auto justify-center items-center my-12 gap-14">
-        <div className="space-y-4  max-w-5xl mx-auto">
+        <div className="space-y-4 lg:px-0 px-8   max-w-5xl mx-auto">
           <div className="flex items-center justify-center">
             <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
             <p className="text-yellow-500 font-bold">INSTALLATIONS</p>
@@ -97,7 +97,7 @@ export default function page() {
           <p className="text-center">
             {`Vous souhaitez vous orienter vers la pose d’un climatiseur mural réversible ? Ces systèmes pompe à chaleur air-air sont considérés comme les moins énergivores. Selon le nombre de pièces que vous climatisez, vous pouvez choisir un climatiseur monosplit (une pièce) ou multisplit (plusieurs pièces). `}
           </p>
-          <div className="flex">
+          <div className="flex lg:flex-row flex-col">
             <div className="mx-auto flex flex-col justify-center">
               <Image
                 src="/multi.png"

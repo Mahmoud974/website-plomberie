@@ -24,7 +24,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 py-12 space-y-8">
+      <div className="container text-center mx-auto px-6 py-12 space-y-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800">
             Plombier chauffagiste à Valence dans la Drôme
@@ -72,7 +72,7 @@ export default function About() {
           <p className="mt-4 text-lg text-gray-700">
             J’interviens pour l’installation et la réparation de :
           </p>
-          <ul className="list-disc list-inside mt-4 text-lg text-gray-700">
+          <ul className="  list-inside mt-4 text-lg text-gray-700">
             <li>Pompes à chaleur</li>
             <li>Chaudières gaz à condensation</li>
             <li>Chaudières fuel ou gaz</li>

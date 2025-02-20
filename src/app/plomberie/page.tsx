@@ -30,13 +30,13 @@ export default function page() {
         </div>
       </div>
 
-      <div className="flex container mx-auto justify-center items-center mt-12 gap-14">
+      <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
           src="/technical.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
-          className="w-[36%] h-full object-cover rounded-lg"
+          className="lg:w-[36%] h-full object-cover rounded-lg"
         />
         <div className="space-y-6 max-w-xl">
           {/* Titre Section */}
@@ -73,7 +73,7 @@ export default function page() {
           </Button>
         </div>
       </div>
-      <div className="container mx-auto mt-11">
+      <div className="container lg:px-0 px-8  mx-auto mt-11">
         {" "}
         <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
           Le climatiseur gainable : le choix de la quasi-invisibilité
@@ -84,7 +84,7 @@ export default function page() {
       </div>
 
       <Certifications />
-      <div className="flex container mx-auto justify-center items-center my-12 gap-14">
+      <div className="flex container lg:px-0 px-8  mx-auto justify-center items-center my-12 gap-14">
         <div className="space-y-4  max-w-5xl mx-auto">
           <div className="flex items-center justify-center">
             <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>

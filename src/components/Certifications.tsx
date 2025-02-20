@@ -8,7 +8,7 @@ export default function Certifications() {
         <h3 className="text-center  text-2xl font-bold">
           Nos partenaires et certifications
         </h3>
-        <div className="flex items-center md:flex-row flex-col gap-10 my-6 justify-between mx-44">
+        <div className="flex items-center lg:flex-row flex-col gap-10 my-6 justify-between mx-44">
           <Image
             src="/certifs/rge.png"
             alt="Installation Plomberie"

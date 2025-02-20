@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -26,19 +27,18 @@ export default function page() {
           <p className="text-white text-lg max-w-xl mt-4">
             {` Nos experts en chauffage vous conseillent sur les solutions adaptées
             à vos besoins, que ce soit pour l'installation, l'entretien ou la
-            réparation de vos équipements. Obtenez un devis personnalisé et des
-            réponses à toutes vos questions.`}
+            réparation de vos équipements..`}
           </p>
         </div>
       </div>
 
-      <div className="flex container mx-auto justify-center items-center mt-12 gap-14">
+      <div className="flex lg:flex-row flex-col lg:px-0 px-8  container mx-auto justify-center items-center mt-12 gap-14">
         <Image
           src="/clim-2.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
-          className="w-[36%] h-full object-cover rounded-lg"
+          className="lg:w-[36%] h-full object-cover rounded-lg"
         />
         <div className="space-y-6 max-w-xl">
           {/* Titre Section */}
@@ -69,13 +69,14 @@ export default function page() {
             Profitez d’une installation performante et économique, parfaitement
             intégrée à votre intérieur.
           </p>
-
-          <Button className="bg-yellow-500 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
-            Demander un devis
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-yellow-500 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
+              Demander un devis
+            </Button>
+          </Link>
         </div>
       </div>
-      <div className="container mx-auto mt-11">
+      <div className="container mx-auto mt-11 lg:px-0 px-8 ">
         {" "}
         <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
           Le climatiseur gainable : le choix de la quasi-invisibilité
@@ -86,8 +87,8 @@ export default function page() {
       </div>
 
       <Certifications />
-      <div className="flex container mx-auto justify-center items-center my-12 gap-14">
-        <div className="space-y-4  max-w-5xl mx-auto">
+      <div className="flex container mx-auto justify-center items-center my-12 gap-14 lg:px-0 px-8 ">
+        <div className="space-y-4   max-w-5xl mx-auto">
           <div className="flex items-center justify-center">
             <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
             <p className="text-yellow-500 font-bold">INSTALLATIONS</p>
@@ -99,7 +100,7 @@ export default function page() {
           <p className="text-center">
             {`Vous souhaitez vous orienter vers la pose d’un climatiseur mural réversible ? Ces systèmes pompe à chaleur air-air sont considérés comme les moins énergivores. Selon le nombre de pièces que vous climatisez, vous pouvez choisir un climatiseur monosplit (une pièce) ou multisplit (plusieurs pièces). `}
           </p>
-          <div className="flex">
+          <div className="flex lg:flex-row flex-col">
             <div className="mx-auto flex flex-col justify-center">
               <Image
                 src="/multi.png"

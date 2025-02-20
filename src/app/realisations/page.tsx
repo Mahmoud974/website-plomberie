@@ -1,11 +1,10 @@
 import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
-import { Button } from "@/components/ui/button";
+
 import Image from "next/image";
 import React from "react";
 import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
-import Porfolio from "@/components/Porfolio";
 
 export default function page() {
   return (
@@ -25,8 +24,7 @@ export default function page() {
           <p className="text-white text-lg max-w-xl mt-4">
             {` Nos experts en chauffage vous conseillent sur les solutions adaptées
             à vos besoins, que ce soit pour l'installation, l'entretien ou la
-            réparation de vos équipements. Obtenez un devis personnalisé et des
-            réponses à toutes vos questions.`}
+            réparation de vos équipements.`}
           </p>
         </div>
       </div>
