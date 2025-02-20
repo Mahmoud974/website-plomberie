@@ -24,10 +24,17 @@ export default function About() {
       </div>
 
       <div className="container text-center mx-auto px-6 py-12 space-y-8">
+        <div className="flex items-center justify-center">
+          <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
+          <p className="text-yellow-500 font-bold uppercase">
+            QUI SOMMES-NOUS ?
+          </p>
+          <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
+        </div>
+        <h2 className="text-3xl -mt-3 font-bold text-gray-800">
+          Plombier chauffagiste à Valence dans la Drôme
+        </h2>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800">
-            Plombier chauffagiste à Valence dans la Drôme
-          </h2>
           <p className="mt-4 text-lg text-gray-700">
             Installé depuis 1999 en tant qu’artisan, je suis spécialisé dans la
             vente et l’installation de systèmes de chauffage et de

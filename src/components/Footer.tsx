@@ -1,9 +1,28 @@
-import { Clock10, Mail, MapPinned, Phone } from "lucide-react";
+"use client";
+import { useEffect, useState } from "react";
+import { Clock10, Mail, MapPinned, Phone, CircleArrowUp } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="bg-[#0A2A3D] text-white py-10 px-6 lg:px-20 mt-12">
+    <footer className="bg-[#0A2A3D] text-white py-10 px-6 lg:px-20 mt-12 relative">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 text-center lg:text-left">
         {/* SERVICES */}
         <div>
@@ -21,7 +40,10 @@ export default function Footer() {
               "Ventilation & VMC",
               "Traitement de l’eau",
             ].map((item) => (
-              <li key={item} className="hover:text-white cursor-pointer">
+              <li
+                key={item}
+                className="hover:text-white cursor-pointer transition"
+              >
                 {item}
               </li>
             ))}
@@ -44,7 +66,10 @@ export default function Footer() {
               "Bâtiments publics",
               "Centres commerciaux",
             ].map((item) => (
-              <li key={item} className="hover:text-white cursor-pointer">
+              <li
+                key={item}
+                className="hover:text-white cursor-pointer transition"
+              >
                 {item}
               </li>
             ))}
@@ -83,7 +108,10 @@ export default function Footer() {
               "Certifications & Garanties",
               "FAQ - Questions fréquentes",
             ].map((item) => (
-              <li key={item} className="hover:text-white cursor-pointer">
+              <li
+                key={item}
+                className="hover:text-white cursor-pointer transition"
+              >
                 {item}
               </li>
             ))}
@@ -131,6 +159,16 @@ export default function Footer() {
           Conditions générales
         </a>
       </div>
+
+      {/* BOUTON RETOUR EN HAUT */}
+      {showButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6  text-black p-3 rounded-full   hover:bg-[#0A2A3D] transition transform hover:scale-110"
+        >
+          <CircleArrowUp className="w-14 h-14 text-yellow-500" />
+        </button>
+      )}
     </footer>
   );
 }

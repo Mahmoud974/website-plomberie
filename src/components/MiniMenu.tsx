@@ -13,35 +13,39 @@ export function MiniMenu() {
       {/* Home */}
       <MenubarMenu>
         <Link href="/">
-          <MenubarTrigger className="cursor-pointer">HOME</MenubarTrigger>
+          <MenubarTrigger className="relative cursor-pointer transition-all duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-500 hover:after:w-full after:transition-all after:duration-300">
+            HOME
+          </MenubarTrigger>
         </Link>
       </MenubarMenu>
 
       <span className="text-white">|</span>
 
       <MenubarMenu>
-        <MenubarTrigger className="cursor-pointer">PRESTATIONS</MenubarTrigger>
-        <MenubarContent className="bg-black text-white">
-          <Link className="cursor-pointer" href="pompes-a-chaleur">
-            <MenubarItem>Pompes à chaleur</MenubarItem>
-          </Link>
-          <Link className="cursor-pointer" href="chauffage">
-            <MenubarItem>Chauffage</MenubarItem>
-          </Link>
-          <Link className="cursor-pointer" href="climatisation">
-            <MenubarItem>Climatisation</MenubarItem>
-          </Link>
-          <Link className="cursor-pointer" href="plomberie">
-            <MenubarItem>Plomberie</MenubarItem>
-          </Link>
+        <MenubarTrigger className="relative cursor-pointer transition-all duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-500 hover:after:w-full after:transition-all after:duration-300">
+          PRESTATIONS
+        </MenubarTrigger>
+        <MenubarContent className="bg-black text-white border border-gray-700 shadow-lg rounded-md overflow-hidden">
+          {[
+            { name: "Pompes à chaleur", href: "pompes-a-chaleur" },
+            { name: "Chauffage", href: "chauffage" },
+            { name: "Climatisation", href: "climatisation" },
+            { name: "Plomberie", href: "plomberie" },
+          ].map((item, index) => (
+            <Link key={index} href={item.href}>
+              <MenubarItem className="cursor-pointer px-4 py-2 transition-all duration-300 hover:bg-yellow-500 hover:text-black">
+                {item.name}
+              </MenubarItem>
+            </Link>
+          ))}
         </MenubarContent>
       </MenubarMenu>
 
       <span className="text-white">|</span>
 
       <MenubarMenu>
-        <Link className="cursor-pointer" href="realisations">
-          <MenubarTrigger className="cursor-pointer">
+        <Link href="realisations">
+          <MenubarTrigger className="relative cursor-pointer transition-all duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-500 hover:after:w-full after:transition-all after:duration-300">
             NOS RÉALISATIONS
           </MenubarTrigger>
         </Link>
@@ -50,16 +54,20 @@ export function MiniMenu() {
       <span className="text-white">|</span>
 
       <MenubarMenu>
-        <Link className="cursor-pointer" href="about">
-          <MenubarTrigger className="cursor-pointer">À PROPOS</MenubarTrigger>
+        <Link href="about">
+          <MenubarTrigger className="relative cursor-pointer transition-all duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-500 hover:after:w-full after:transition-all after:duration-300">
+            À PROPOS
+          </MenubarTrigger>
         </Link>
       </MenubarMenu>
 
       <span className="text-white">|</span>
 
       <MenubarMenu>
-        <Link className="cursor-pointer" href="/contact">
-          <MenubarTrigger className="cursor-pointer">CONTACT</MenubarTrigger>
+        <Link href="/contact">
+          <MenubarTrigger className="relative cursor-pointer transition-all duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-500 hover:after:w-full after:transition-all after:duration-300">
+            CONTACT
+          </MenubarTrigger>
         </Link>
       </MenubarMenu>
     </Menubar>

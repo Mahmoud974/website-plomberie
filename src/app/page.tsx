@@ -6,6 +6,8 @@ import HeatingSolutions from "@/components/HeatingSolutions";
 import Certifications from "@/components/Certifications";
 import HomeIcons from "@/components/HomeIcons";
 import { QuestionsReponses } from "@/components/QuestionsReponses";
+import Avantage from "@/components/Avantage";
+import { MarqueeDemo } from "@/components/AvisClients";
 
 export default function page() {
   return (
@@ -17,21 +19,21 @@ export default function page() {
           src="/plomb-2.jpg"
           alt="Installation Plomberie"
           fill
-          className="w-full h-full object-cover "
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 pt-12 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-4xl font-extrabold">Home</h1>
           <div className="bg-yellow-500 h-1 w-24 mt-2"></div>
-          <p className="text-white text-lg max-w-xl mt-4 ">
+          <p className="text-white text-lg max-w-xl mt-4">
             {`L’été arrive à grands pas ! Préparez-vous aux fortes chaleurs en installant un système de climatisation adapté à votre maison. ☀️❄️`}
           </p>
         </div>
       </div>
+
       <HomeIcons />
 
-      <div className="container lg:mx-auto lg:px-0 px-8   ">
-        {" "}
-        <h5 className="text-2xl font-extrabold mt-6   mx-auto text-center">
+      <div className="container lg:mx-auto lg:px-0 px-8">
+        <h5 className="text-2xl font-extrabold mt-6 mx-auto text-center">
           Le climatiseur gainable : le choix de la quasi-invisibilité
         </h5>
         <p className="text-center text-gray-400 max-w-6xl mt-3 mx-auto">
@@ -39,20 +41,22 @@ export default function page() {
         </p>
       </div>
 
-      <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 lg:gap-28 gap-12">
+      <div className="flex lg:flex-row lg:px-0 px-8 flex-col container mx-auto justify-center items-center mt-12 lg:gap-28 gap-12">
         <Image
           src="/clim-2.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
-          className="lg:w-[36%]  h-full object-cover rounded-lg"
+          className="lg:w-[36%] h-full object-cover rounded-lg"
         />
         <QuestionsReponses />
       </div>
+      <MarqueeDemo />
 
       <Certifications />
+      <Avantage />
       <div className="flex container mx-auto justify-center items-center my-12 gap-14">
-        <div className="space-y-4  max-w-5xl mx-auto">
+        <div className="space-y-4 max-w-5xl mx-auto">
           <div className="flex items-center justify-center">
             <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
             <p className="text-yellow-500 font-bold uppercase">Avis clients</p>
