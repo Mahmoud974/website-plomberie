@@ -13,14 +13,14 @@ export function MiniMenu() {
       {/* Home */}
       <MenubarMenu>
         <Link href="/">
-          <MenubarTrigger>HOME</MenubarTrigger>
+          <MenubarTrigger className="cursor-pointer">HOME</MenubarTrigger>
         </Link>
       </MenubarMenu>
 
       <span className="text-white">|</span>
 
       <MenubarMenu>
-        <MenubarTrigger>PRESTATIONS</MenubarTrigger>
+        <MenubarTrigger className="cursor-pointer">PRESTATIONS</MenubarTrigger>
         <MenubarContent className="bg-black text-white">
           <Link className="cursor-pointer" href="pompes-a-chaleur">
             <MenubarItem>Pompes à chaleur</MenubarItem>
@@ -41,7 +41,9 @@ export function MiniMenu() {
 
       <MenubarMenu>
         <Link className="cursor-pointer" href="realisations">
-          <MenubarTrigger>NOS RÉALISATIONS</MenubarTrigger>
+          <MenubarTrigger className="cursor-pointer">
+            NOS RÉALISATIONS
+          </MenubarTrigger>
         </Link>
       </MenubarMenu>
 
@@ -49,7 +51,7 @@ export function MiniMenu() {
 
       <MenubarMenu>
         <Link className="cursor-pointer" href="about">
-          <MenubarTrigger>À PROPOS</MenubarTrigger>
+          <MenubarTrigger className="cursor-pointer">À PROPOS</MenubarTrigger>
         </Link>
       </MenubarMenu>
 
@@ -57,7 +59,7 @@ export function MiniMenu() {
 
       <MenubarMenu>
         <Link className="cursor-pointer" href="/contact">
-          <MenubarTrigger>CONTACT</MenubarTrigger>
+          <MenubarTrigger className="cursor-pointer">CONTACT</MenubarTrigger>
         </Link>
       </MenubarMenu>
     </Menubar>

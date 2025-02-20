@@ -14,11 +14,10 @@ export default function page() {
 
       <div className="relative w-full h-[400px]">
         <Image
-          src="/plomb-1.jpg"
+          src="/plomb-2.jpg"
           alt="Installation Plomberie"
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
+          fill
+          className="w-full h-full object-cover "
         />
         <div className="absolute inset-0 pt-12 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-4xl font-extrabold">Home</h1>

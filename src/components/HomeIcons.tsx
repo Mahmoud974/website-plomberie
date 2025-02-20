@@ -1,41 +1,51 @@
-import { FaMousePointer, FaRocket, FaChartLine, FaUsers } from "react-icons/fa";
+import Image from "next/image";
 
 export default function HomeIcons() {
   const features = [
     {
-      title: "Concevoir et construire",
-      icon: <FaMousePointer className="text-yellow-500 text-3xl" />,
+      title: "Installation de chauffage",
+      image: "/icons/key.png",
       description:
-        "Prenez le contrôle du HTML, CSS et JavaScript grâce à une interface visuelle intuitive, tout en bénéficiant de blocs de construction prêts à l'emploi.",
+        "Pose et remplacement de pompes à chaleur (PAC) et de chaudières gaz à condensation, fuel ou gaz.",
     },
     {
-      title: "Publier et éditer",
-      icon: <FaRocket className="text-yellow-500 text-3xl" />,
+      title: "Climatisation performante",
+      image: "/icons/clim.png",
       description:
-        "Ajoutez, modifiez et mettez à jour votre contenu en toute simplicité avec notre CMS, visuellement ou via nos API headless.",
+        "Installation et maintenance de climatisations pour assurer un confort thermique optimal toute l'année.",
     },
     {
-      title: "Analyser et optimiser",
-      icon: <FaChartLine className="text-yellow-500 text-3xl" />,
+      title: "Travaux de plomberie",
+      image: "/icons/piece.png",
       description:
-        "Transformez votre site en un puissant levier marketing avec des outils natifs d’optimisation SEO, de personnalisation IA et d'A/B testing.",
+        "Création et modification d’installations : salles de bains, WC, cuisines, robinetterie, douche, baignoire, etc.",
     },
     {
-      title: "Évoluer et collaborer",
-      icon: <FaUsers className="text-yellow-500 text-3xl" />,
+      title: "Dépannage et réparation",
+      image: "/icons/check.png",
       description:
-        "Déployez et sécurisez votre site avec des outils d’hébergement performants et connectez-vous facilement à votre stack technologique.",
+        "Intervention rapide pour réparer vos pompes à chaleur, chaudières, chauffe-eaux thermodynamiques.",
     },
   ];
 
   return (
-    <div className=" text-left   py-16 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
+    <div className="text-left py-16 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {features.map((feature, index) => (
-          <div key={index} className="space-y-4">
-            <div>{feature.icon}</div>
-            <h3 className="text-lg font-bold">{feature.title}</h3>
-            <p className="text-gray-400">{feature.description}</p>
+          <div key={index} className="flex flex-col items-start space-y-2">
+            <div className="w-16 h-16 ">
+              <Image
+                src={feature.image}
+                alt={feature.title}
+                width={150}
+                height={150}
+                className="object-cover mb-2"
+              />
+            </div>
+            <div className="flex flex-col space-y-2">
+              <h3 className="text-lg font-bold">{feature.title}</h3>
+              <p className="text-gray-400">{feature.description}</p>
+            </div>
           </div>
         ))}
       </div>

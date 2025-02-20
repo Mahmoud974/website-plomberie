@@ -14,9 +14,8 @@ export default function About() {
         <Image
           src="/plomb-2.jpg"
           alt="Plombier Chauffagiste Valence"
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
+          fill
+          className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-4xl font-extrabold">À Propos</h1>

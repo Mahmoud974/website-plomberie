@@ -6,8 +6,8 @@ export default function Banner() {
     <div className="relative w-full h-[600px] pt-[100px]">
       <Image
         src="/plomb-1.jpg"
-        layout="fill"
-        objectFit="cover"
+        fill
+        className="object-cover"
         alt="Bannière d'accueil"
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">

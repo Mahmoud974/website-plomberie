@@ -14,9 +14,8 @@ export default function page() {
         <Image
           src="/clima.jpg"
           alt="Installation Plomberie"
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
+          fill
+          className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 pt-12 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-4xl font-extrabold">Climatisation</h1>

@@ -120,7 +120,7 @@ export default function Footer() {
         droits réservés.
         <br />
         <Link
-          href="/mentions-legales"
+          href="/mentions-legals"
           className="text-yellow-500 hover:underline"
         >
           Mentions légales

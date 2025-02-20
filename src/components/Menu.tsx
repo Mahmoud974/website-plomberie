@@ -23,7 +23,6 @@ export default function Menu() {
               </a>
             </div>
 
-            {/* Numéro de téléphone et adresse */}
             <div className="flex">
               <div className="flex items-center gap-2">
                 <Phone size={20} />
@@ -38,7 +37,8 @@ export default function Menu() {
               src="/logo.png"
               width={500}
               height={500}
-              alt="Logo"
+              alt="Logo plomberie"
+              priority
               className="w-40"
             />
           </Link>
