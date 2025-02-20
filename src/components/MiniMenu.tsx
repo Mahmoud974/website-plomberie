@@ -40,14 +40,12 @@ export function MiniMenu() {
 
       <span className="text-white">|</span>
 
-      {/* Actualités */}
       <MenubarMenu>
         <MenubarTrigger>ACTUALITÉS - PRIME POMPE À CHALEUR</MenubarTrigger>
       </MenubarMenu>
 
       <span className="text-white">|</span>
 
-      {/* Réalisations */}
       <MenubarMenu>
         <Link className="cursor-pointer" href="realisations">
           <MenubarTrigger>NOS RÉALISATIONS</MenubarTrigger>
@@ -56,7 +54,6 @@ export function MiniMenu() {
 
       <span className="text-white">|</span>
 
-      {/* À propos */}
       <MenubarMenu>
         <Link className="cursor-pointer" href="about">
           <MenubarTrigger>À PROPOS</MenubarTrigger>
@@ -65,7 +62,6 @@ export function MiniMenu() {
 
       <span className="text-white">|</span>
 
-      {/* Contact */}
       <MenubarMenu>
         <Link className="cursor-pointer" href="/contact">
           <MenubarTrigger>CONTACT</MenubarTrigger>

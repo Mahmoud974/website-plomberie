@@ -5,10 +5,10 @@ export default function Certifications() {
   return (
     <div className="bg-slate-50 ">
       <div className="container mx-auto  h-auto my-12 py-5">
-        <h3 className="text-center text-2xl font-bold  ">
+        <h3 className="text-center  text-2xl font-bold">
           Nos partenaires et certifications
         </h3>
-        <div className="flex items-center gap-10 my-6 justify-between mx-44">
+        <div className="flex items-center md:flex-row flex-col gap-10 my-6 justify-between mx-44">
           <Image
             src="/certifs/rge.png"
             alt="Installation Plomberie"

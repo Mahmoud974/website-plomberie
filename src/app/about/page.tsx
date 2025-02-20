@@ -2,7 +2,7 @@ import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 import HeatingSolutions from "@/components/HeatingSolutions";
 import Menu from "@/components/Menu";
-import { Button } from "@/components/ui/button";
+
 import Image from "next/image";
 import React from "react";
 
