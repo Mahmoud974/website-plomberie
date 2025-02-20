@@ -11,6 +11,7 @@ export default function page() {
   return (
     <>
       <Menu />
+
       <div className="relative w-full h-[400px]">
         <Image
           src="/plomb-1.jpg"
@@ -29,7 +30,7 @@ export default function page() {
       </div>
       <HomeIcons />
 
-      <div className="container md:mx-auto  ">
+      <div className="container md:mx-auto md:px-0 px-8   ">
         {" "}
         <h5 className="text-2xl font-extrabold mt-6   mx-auto text-center">
           Le climatiseur gainable : le choix de la quasi-invisibilité
@@ -39,7 +40,7 @@ export default function page() {
         </p>
       </div>
 
-      <div className="flex md:flex-row flex-col container mx-auto justify-center items-center mt-12 gap-28">
+      <div className="flex md:flex-row md:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 md:gap-28 gap-12">
         <Image
           src="/clim-2.jpg"
           alt="Installation Plomberie"
