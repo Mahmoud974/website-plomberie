@@ -5,20 +5,15 @@ export default function Avantage() {
   return (
     <div>
       <div className="space-y-4 max-w-5xl mx-auto">
-        <div className="flex items-center justify-center">
-          <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
-          <p className="text-yellow-500 font-bold uppercase">Avantages</p>
-          <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
-        </div>
         <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-          Installation de tous les types de climatisations murales réversibles
+          Les avantages
         </h2>
       </div>
       <div className="container mx-auto max-w-6xl ">
         <div className="bg-white py-12">
           <div className="mx-auto">
             <div className="flex lg:flex-row lg:px-0 px-8 flex-col gap-6">
-              <div className="bg-[#f2faff] text-[#0A2A3D] p-6 shadow-sm text-center">
+              <div className="bg-[#e3f4ff] text-[#0A2A3D] p-6 shadow-sm text-center">
                 <div className="flex justify-center mb-4">
                   <FaTools className="text-4xl " />
                 </div>

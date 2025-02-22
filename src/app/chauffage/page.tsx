@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]  ">
         <Image
-          src="/plomb-2.jpg"
+          src="/chauffage-1.jpg"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -38,7 +38,9 @@ export default function page() {
         />
         <div className=" space-y-4 max-w-xl">
           <div className="flex items-center">
-            <p className="text-yellow-500  font-bold">CHAUDIÈRE</p>
+            <p className="text-yellow-500  font-bold">
+              SPÉCIALISTE DANS LA VENTE
+            </p>
             <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
           </div>
           <h2 className="  text-3xl font-extrabold mt-6 max-w-xl">
@@ -71,6 +73,13 @@ export default function page() {
       <div className="container mx-auto mt-11">
         <div className="flex lg:flex-row flex-col lg:px-0 px-8   justify-center gap-6">
           <div className="border p-6 rounded-lg shadow-lg   max-w-xl bg-white">
+            <Image
+              src="/page-chauffage/chaudiere.png"
+              alt="Installation Plomberie"
+              width={100}
+              height={100}
+              className="object-cover w-12 mb-5  "
+            />
             <h3 className="text-2xl font-extrabold text-gray-800 mb-4">
               Installation de chaudières
             </h3>
@@ -81,8 +90,16 @@ export default function page() {
           </div>
 
           <div className="border p-6 rounded-lg shadow-lg flex-1  max-w-xl bg-white">
+            <Image
+              src="/page-chauffage/pompes.png"
+              alt="Installation Plomberie"
+              width={100}
+              height={100}
+              className="object-cover w-20 mb-5  "
+            />
+
             <h3 className="text-2xl font-extrabold text-gray-800 mb-4">
-              Installation de Pompes
+              Installation de Pompes à chaleur
             </h3>
             <p className="text-gray-600 text-lg">
               {`Une étude préalable de votre habitation est essentielle pour déterminer si une pompe à chaleur est la solution la plus adaptée. Nous vous guidons dans le choix de la pompe la mieux adaptée à vos besoins de chauffage.`}
@@ -94,27 +111,38 @@ export default function page() {
 
       <Certifications />
       <div className="flex container mx-auto justify-center items-center my-12 gap-14">
-        <div className="space-y-4 lg:px-0 px-8  max-w-5xl mx-auto">
+        <div className="space-y-4 lg:px-0 px-8 max-w-5xl mx-auto">
           <div className="flex items-center justify-center">
             <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
             <p className="text-yellow-500 font-bold">CHAUDIÈRE</p>
             <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
           </div>
+
           <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            Vente et installation de systèmes de chauffage à Valence et dans la
-            Drôme.
+            Votre expert en chauffage à Valence et dans la Drôme
           </h2>
+
           <p className="text-center">
-            {`Les pannes de chauffage surviennent souvent au moment le moins opportun. Les experts chauffagistes d’Eco Thermes sont disponibles pour intervenir rapidement à Valence et ses environs, que ce soit pour réparer votre chaudière, votre pompe à chaleur ou votre poêle.`}
+            {`Les pannes de chauffage peuvent survenir à tout moment, mais avec Eco Thermes, vous bénéficiez d'une intervention rapide et efficace. Nos experts chauffagistes se déplacent à Valence et dans les alentours pour réparer vos chaudières, pompes à chaleur ou poêles.`}
           </p>
+
           <p className="text-center">
-            {`Faire entretenir votre installation garantit son efficacité et prolonge sa durée de vie. Notre équipe s'assure de réaliser toutes les vérifications nécessaires pour maintenir vos équipements en parfait état de fonctionnement.`}
+            {`L'entretien de vos équipements est essentiel pour garantir leur performance à long terme. Nous effectuons des vérifications complètes pour vous assurer de leur bon fonctionnement et prolonger leur durée de vie.`}
           </p>
-          <p className="text-center">
-            {`Nos tarifs pour le dépannage sont de 70 € / heure HT pour les chaudières et poêles, et de 85 € / heure HT pour les pompes à chaleur.`}
-          </p>
-          <p className="text-center">
-            {`Contactez-nous dès maintenant pour bénéficier de notre expertise en installation et maintenance de chauffage à Valence.`}
+
+          <div className="flex justify-center items-center text-center mt-4">
+            <div className="text-xl font-semibold">
+              Nos tarifs de dépannage :
+            </div>
+          </div>
+
+          <ul className="text-center  mt-4">
+            <li className="mb-2  ">Chaudières et poêles : 70 € / heure HT</li>
+            <li className="mb-2">Pompes à chaleur : 85 € / heure HT</li>
+          </ul>
+
+          <p className="text-center mt-6">
+            {`Pour une installation ou un dépannage, contactez-nous dès aujourd'hui. Nous sommes là pour vous offrir des solutions adaptées à vos besoins.`}
           </p>
         </div>
       </div>

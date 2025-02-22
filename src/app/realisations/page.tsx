@@ -6,6 +6,8 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react"; // Import des icônes
 import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const portfolioImages: string[] = [
   "/portfolios/portfolio-1.jpg",
@@ -90,6 +92,11 @@ export default function Page() {
               </div>
             ))}
           </div>
+          <Link href="/contact">
+            <Button className="mx-auto flex justify-center mt-10">
+              Contactez-nous
+            </Button>
+          </Link>
         </div>
       </section>
       {selectedIndex !== null && (

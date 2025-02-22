@@ -31,7 +31,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/clim-2.jpg"
+          src="/clim-3.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -47,38 +47,31 @@ export default function page() {
           </div>
 
           <h2 className="text-3xl font-extrabold mt-4">
-            Bien choisir votre climatisation
+            Comment choisir la climatisation idéale pour votre logement
           </h2>
 
           <p>
-            Le choix de votre climatisation dépend de plusieurs critères :
-            superficie et disposition des pièces, isolation, exposition au
-            soleil et présence d’ouvertures.
+            {`Le choix de votre futur système de climatisation repose sur plusieurs critères essentiels. Il est crucial de prendre en compte la taille de votre habitation, la disposition des pièces à climatiser, ainsi que les volumes des espaces concernés. L'isolation de votre logement, les ouvertures présentes et l'exposition au soleil jouent également un rôle clé dans la détermination de la solution la plus adaptée.`}
           </p>
 
           <p>
-            Après analyse, je vous propose la solution la plus adaptée :
-            puissance optimale, type d’équipement (monosplit, multisplit,
-            gainable), emplacement des unités et meilleur rapport qualité-prix.
+            {`Une fois ces éléments analysés, je pourrai vous proposer une installation parfaitement adaptée à vos besoins. Cela inclut la sélection de la puissance optimale pour garantir une climatisation efficace, le choix du type d’équipement (monosplit, multisplit ou gainable), l'emplacement idéal des unités intérieures et extérieures, et enfin un rapport qualité-prix qui correspond à vos attentes.`}
           </p>
 
           <p>
-            Profitez d’une installation performante et économique, parfaitement
-            intégrée à votre intérieur.
+            {`En anticipant ces critères et en réalisant une étude approfondie de votre logement, je vous assure une installation performante, économique et parfaitement intégrée à votre intérieur, pour un confort optimal tout au long de l'année.`}
           </p>
-
-          <Button className="bg-yellow-500 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
-            Demander un devis
-          </Button>
         </div>
       </div>
-      <div className="container lg:px-0 px-8  mx-auto mt-11">
-        {" "}
+      <div className="container lg:px-0 px-8 mx-auto mt-11">
         <h5 className="text-2xl font-extrabold lg:mt-6 mb-3 max-w-xl mx-auto text-center">
-          Le climatiseur gainable : le choix de la quasi-invisibilité
+          Préparez votre logement aux chaleurs estivales en Drôme Ardèche !
         </h5>
         <p className="text-center">
-          {`Il s’agit sans conteste de la solution esthétique la plus respectueuse de votre décoration intérieure. Intégrée dans les murs ou les conduits, elle ne laisse apparaître que les grilles par lesquelles l’air climatisé est diffusé dans vos pièces. Grâce à son invisibilité le climatiseur gainable offre un gain de place non négligeable. Très silencieuse et avec peu de mouvement d'air, elle apporte également un confort supérieur à la climatisation réversible classique. Les performances sont très bonnes et les consommations d’énergie sont maîtrisées grâce au pilotage par télécommande individualisé dans chaque pièce.`}
+          {`Les étés deviennent de plus en plus chauds, et l'aération naturelle ne suffit plus à rafraîchir nos habitations. Entre les nuisances sonores et la pollution, il est essentiel de penser à une climatisation efficace. Les systèmes modernes, tels que les climatiseurs gainables, sont plus discrets, moins énergivores et offrent un confort optimal. Ils s’intègrent parfaitement à votre intérieur sans perturber votre décoration.`}
+        </p>
+        <p className="text-center mt-4">
+          {`Que vous optiez pour une climatisation murale, une pompe à chaleur ou un système gainable, notre équipe installe ces équipements dans les meilleurs délais. Anticipez la chaleur et choisissez la solution adaptée à votre logement pour profiter d'une climatisation réversible toute l'année.`}
         </p>
       </div>
 
@@ -99,11 +92,11 @@ export default function page() {
           <div className="flex lg:flex-row flex-col">
             <div className="mx-auto flex flex-col justify-center">
               <Image
-                src="/multi.png"
+                src="/page-clim/single-clim.png"
                 alt="Installation Plomberie"
                 width={500}
                 height={500}
-                className="w-32 h-full object-cover rounded-lg mx-auto"
+                className="w-40 h-40 object-contain   rounded-lg mx-auto"
               />
               <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
                 Monosplit
@@ -116,11 +109,11 @@ export default function page() {
 
             <div className="mx-auto flex flex-col justify-center">
               <Image
-                src="/multi.png"
+                src="/page-clim/multi-clim.png"
                 alt="Installation Plomberie"
                 width={500}
                 height={500}
-                className="w-32 h-full object-cover rounded-lg mx-auto"
+                className="w-40 h-40  object-contain rounded-lg mx-auto"
               />
               <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
                 Multisplit
@@ -210,6 +203,9 @@ export default function page() {
               fonctionnement.`}
             </li>
           </ol>
+          <Button className="bg-yellow-500 mx-auto justify-center flex mt-4 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
+            Demander un devis
+          </Button>
         </div>
       </div>
       <HeatingSolutions />
