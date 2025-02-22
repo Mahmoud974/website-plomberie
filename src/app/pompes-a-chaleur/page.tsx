@@ -152,8 +152,8 @@ export default function page() {
                 Pompe à chaleur Air-Eau
               </h4>
               <p className="text-center mt-2">
-                Cette solution est idéale pour remplacer une chaudière, elle
-                produit de l'eau chaude pour le chauffage et l'eau sanitaire.
+                {`      Cette solution est idéale pour remplacer une chaudière, elle
+                produit de l'eau chaude pour le chauffage et l'eau sanitaire.`}
               </p>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function page() {
               <strong>
                 Une réduction des émissions de gaz à effet de serre
               </strong>{" "}
-              grâce à l'utilisation d'énergies renouvelables dans le processus.
+              {`  grâce à l'utilisation d'énergies renouvelables dans le processus.`}
             </li>
             <li>
               <strong>

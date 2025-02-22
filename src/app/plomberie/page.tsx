@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/plomb-2.jpg"
+          src="/tools.jpg"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -21,10 +21,7 @@ export default function page() {
           <h1 className="text-white text-4xl font-extrabold">Plomberie</h1>
           <div className="bg-yellow-500 h-1 w-24 mt-2"></div>
           <p className="text-white text-lg max-w-xl mt-4">
-            {` Nos experts en chauffage vous conseillent sur les solutions adaptées
-            à vos besoins, que ce soit pour l'installation, l'entretien ou la
-            réparation de vos équipements. Obtenez un devis personnalisé et des
-            réponses à toutes vos questions.`}
+            {`Nos experts en plomberie vous conseillent pour l'installation, l'entretien ou la réparation de vos équipements. Demandez un devis personnalisé pour vos besoins spécifiques.`}
           </p>
         </div>
       </div>
@@ -41,30 +38,25 @@ export default function page() {
           {/* Titre Section */}
           <div className="flex items-center">
             <p className="text-yellow-500 font-bold uppercase">
-              Installation Climatisation à Valence
+              Installation Plomberie à Valence
             </p>
             <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
           </div>
 
           <h2 className="text-3xl font-extrabold mt-4">
-            Bien choisir votre climatisation
+            Bien choisir votre installation de plomberie
           </h2>
 
           <p>
-            Le choix de votre climatisation dépend de plusieurs critères :
-            superficie et disposition des pièces, isolation, exposition au
-            soleil et présence d’ouvertures.
+            {`Le choix de votre installation de plomberie dépend de plusieurs critères : la taille de votre habitation, le nombre de points d’eau, ainsi que l’état de votre réseau existant. Il est essentiel de prendre en compte ces éléments pour garantir une installation fiable et durable.`}
           </p>
 
           <p>
-            Après analyse, je vous propose la solution la plus adaptée :
-            puissance optimale, type d’équipement (monosplit, multisplit,
-            gainable), emplacement des unités et meilleur rapport qualité-prix.
+            {`Après une analyse approfondie, je vous proposerai la solution la plus adaptée à vos besoins : matériaux, type de tuyauterie, ainsi que l’emplacement idéal des installations. Nous veillerons également à optimiser le rapport qualité-prix.`}
           </p>
 
           <p>
-            Profitez d’une installation performante et économique, parfaitement
-            intégrée à votre intérieur.
+            {`Bénéficiez d’une installation de plomberie efficace, sécurisée et parfaitement intégrée à votre logement pour un confort quotidien.`}
           </p>
 
           <Button className="bg-yellow-500 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
@@ -72,62 +64,105 @@ export default function page() {
           </Button>
         </div>
       </div>
-      <div className="container lg:px-0 px-8  mx-auto mt-11">
-        {" "}
-        <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-          Le climatiseur gainable : le choix de la quasi-invisibilité
-        </h5>
-        <p className="text-center">
-          {`Il s’agit sans conteste de la solution esthétique la plus respectueuse de votre décoration intérieure. Intégrée dans les murs ou les conduits, elle ne laisse apparaître que les grilles par lesquelles l’air climatisé est diffusé dans vos pièces. Grâce à son invisibilité le climatiseur gainable offre un gain de place non négligeable. Très silencieuse et avec peu de mouvement d'air, elle apporte également un confort supérieur à la climatisation réversible classique. Les performances sont très bonnes et les consommations d’énergie sont maîtrisées grâce au pilotage par télécommande individualisé dans chaque pièce.`}
-        </p>
-      </div>
 
       <Certifications />
+
+      <div className="flex justify-center container mx-auto mt-8">
+        <div className="space-y-6">
+          <div className="flex justify-center container mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8 space-y-6 lg:space-y-0">
+              <div className="flex flex-col items-center space-y-6">
+                <Image
+                  src="/realisation.jpg"
+                  alt="Dépannage de plomberie"
+                  width={500}
+                  height={500}
+                  className="lg:w-96 h-48 object-cover rounded-lg"
+                />
+                <p className="text-2xl font-bold text-center">
+                  Dépannage express
+                </p>
+                <p className="text-center max-w-md">
+                  {`Lorsqu'une panne survient, il est essentiel d'agir rapidement pour éviter des conséquences majeures. Que ce soit pour une fuite, un tuyau bouché ou une installation défectueuse, notre équipe de plombiers est là pour intervenir avec efficacité. Nous offrons un dépannage rapide, professionnel et durable, afin de restaurer le bon fonctionnement de vos installations.`}
+                </p>
+              </div>
+
+              {/* Deuxième section de détection de fuites */}
+              <div className="flex flex-col items-center space-y-6">
+                <Image
+                  src="/fuites.jpg"
+                  alt="Détection de fuites Plomberie"
+                  width={500}
+                  height={500}
+                  className="lg:w-96 h-48 object-cover rounded-lg"
+                />
+                <p className="text-2xl font-bold text-center">
+                  Détection de fuites avancée
+                </p>
+                <p className="text-center max-w-md">
+                  {`La détection précoce des fuites est cruciale pour éviter des dommages coûteux à vos installations. Grâce à notre technologie de pointe, nous localisons les fuites rapidement et précisément, sans causer de dommages à vos murs ou sols. Faites confiance à notre expertise pour une solution rapide et efficace, permettant de préserver l'intégrité de votre système de plomberie.`}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="flex container lg:px-0 px-8  mx-auto justify-center items-center my-12 gap-14">
         <div className="space-y-4  max-w-5xl mx-auto">
           <div className="flex items-center justify-center">
             <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
-            <p className="text-yellow-500 font-bold">INSTALLATIONS</p>
+            <p className="text-yellow-500 font-bold">NOS SERVICES</p>
             <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
           </div>
+
           <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            Installation de tous les types de climatisations murales réversibles
+            Des prestations sur-mesure pour vos besoins en plomberie
           </h2>
-          <p className="text-center">
-            {`Vous souhaitez vous orienter vers la pose d’un climatiseur mural réversible ? Ces systèmes pompe à chaleur air-air sont considérés comme les moins énergivores. Selon le nombre de pièces que vous climatisez, vous pouvez choisir un climatiseur monosplit (une pièce) ou multisplit (plusieurs pièces). `}
+
+          <p className="text-center  mx-auto mt-4">
+            {`Notre équipe de plombiers experts est à votre disposition pour tous vos travaux de plomberie, qu'il s'agisse de l'installation de nouveaux équipements, de la réparation de fuites, ou de l'entretien de vos installations. 
+  Nous intervenons également pour le débouchage de canalisations, la pose de chauffe-eau et bien plus encore, en garantissant un service rapide et de qualité. 
+  Avec Eco Thermes, vous bénéficiez de solutions adaptées à vos besoins, réalisées dans les plus brefs délais.`}
           </p>
-          <div className="flex">
-            <div className="mx-auto flex flex-col justify-center">
+          <p className="bg-yellow-100 text-center">
+            Nous nous occupons de tous vos travaux de plomberie, qu’il s’agisse
+            de débouchage, de réparations ou d’installations de sanitaires.
+            Professionnels expérimentés, nous veillons à intervenir rapidement
+            et efficacement pour assurer votre confort au quotidien.
+          </p>
+
+          <div className="grid lg:grid-cols-2 gap-8 space-y-6 lg:space-y-0">
+            {/* Section Débouchage de canalisations */}
+            <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/multi.png"
-                alt="Installation Plomberie"
+                src="/canalisations.jpg"
+                alt="Dépannage de plomberie"
                 width={500}
                 height={500}
-                className="w-32 h-full object-cover rounded-lg mx-auto"
+                className="lg:w-96 h-48 object-cover rounded-lg"
               />
-              <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-                Monosplit
-              </h4>
-              <p className="text-center mt-2">
-                Ce système comprend une unité extérieure et une unité intérieure
-                pour rafraîchir ou chauffer la pièce.
+              <p className="text-2xl font-bold text-center">
+                Débouchage de canalisations
+              </p>
+              <p className="text-center max-w-md">
+                {`Les canalisations bouchées peuvent causer des désagréments majeurs, affectant le confort et la sécurité de votre habitation. Nous utilisons des équipements adaptés et des techniques modernes pour déboucher vos canalisations de manière rapide et efficace. Qu’il s’agisse d’un dépannage urgent ou d’une intervention de maintenance préventive, nous assurons un service fiable pour éviter tout risque de dégât. Faites appel à nous pour un travail soigné et durable.`}
               </p>
             </div>
 
-            <div className="mx-auto flex flex-col justify-center">
+            {/* Section Pose d'équipements sanitaires */}
+            <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/multi.png"
-                alt="Installation Plomberie"
+                src="/toilets.jpg"
+                alt="Pose d’équipements sanitaires"
                 width={500}
                 height={500}
-                className="w-32 h-full object-cover rounded-lg mx-auto"
+                className="lg:w-96 h-48 object-cover rounded-lg"
               />
-              <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-                Multisplit
-              </h4>
-              <p className="text-center mt-2">
-                Cet équipement est composé d’une unité extérieure et de
-                plusieurs unités intérieures réparties dans votre habitation.
+              <p className="text-2xl font-bold text-center">
+                Pose d’équipements sanitaires
+              </p>
+              <p className="text-center max-w-md">
+                {`Nous prenons en charge l’installation de vos équipements sanitaires, qu’il s’agisse de lavabos, douches, baignoires ou WC. Grâce à notre expertise et à l’utilisation de matériaux de qualité, nous garantissons des installations durables et esthétiques, parfaitement adaptées à vos besoins. Notre priorité est de créer des espaces fonctionnels, pratiques et agréables, tout en veillant à la sécurité et à l’harmonie de votre intérieur.`}
               </p>
             </div>
           </div>

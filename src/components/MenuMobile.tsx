@@ -67,6 +67,14 @@ export function MenuMobile() {
           </li>
           <li>
             <Link
+              href="/recherche-de-fuite"
+              className="hover:underline text-2xl hover:text-yellow-500"
+            >
+              RECHERCHE DE FUITE
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/realisations"
               className="hover:underline text-2xl hover:text-yellow-500"
             >
