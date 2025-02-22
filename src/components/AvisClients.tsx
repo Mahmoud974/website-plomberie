@@ -87,9 +87,18 @@ const ReviewCard = ({
 export function MarqueeDemo() {
   return (
     <div className="relative mt-12 flex w-full flex-col items-center justify-center overflow-hidden   dark:bg-gray-900 py-12">
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-        Avis clients
-      </h2>
+      <div className="space-y-4 mb-4 text-center">
+        <div className="flex items-center justify-center">
+          <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
+          <p className="text-yellow-500 font-bold uppercase">
+            TÉMOIGNAGES CLIENTS
+          </p>
+          <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
+        </div>
+        <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
+          Des clients plus que satisfait
+        </h2>
+      </div>
 
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (

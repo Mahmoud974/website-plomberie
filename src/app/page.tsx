@@ -16,7 +16,7 @@ export default function page() {
 
       <div className="relative w-full h-[400px]">
         <Image
-          src="/plomb-2.jpg"
+          src="/home-1.jpg"
           alt="Installation Plomberie"
           fill
           className="w-full h-full object-cover"
@@ -43,7 +43,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8 flex-col container mx-auto justify-center items-center mt-12 lg:gap-28 gap-12">
         <Image
-          src="/clim-2.jpg"
+          src="/HowWork.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -51,22 +51,11 @@ export default function page() {
         />
         <QuestionsReponses />
       </div>
-      <MarqueeDemo />
 
       <Certifications />
+      <MarqueeDemo />
       <Avantage />
-      <div className="flex container mx-auto justify-center items-center my-12 gap-14">
-        <div className="space-y-4 max-w-5xl mx-auto">
-          <div className="flex items-center justify-center">
-            <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
-            <p className="text-yellow-500 font-bold uppercase">Avis clients</p>
-            <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
-          </div>
-          <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            Installation de tous les types de climatisations murales réversibles
-          </h2>
-        </div>
-      </div>
+      <div className="flex container mx-auto justify-center items-center my-12 gap-14"></div>
       <HeatingSolutions />
 
       <Footer />
