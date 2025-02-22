@@ -203,7 +203,7 @@ export default function page() {
               fonctionnement.`}
             </li>
           </ol>
-          <Button className="bg-yellow-500 mx-auto justify-center flex mt-4 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
+          <Button className="bg-yellow-500 mx-auto justify-center flex text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
             Demander un devis
           </Button>
         </div>

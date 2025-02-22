@@ -82,7 +82,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-300">
             <li className="flex justify-center lg:justify-start items-center">
               <MapPinned className="mr-2" />
-              <p>123 Rue des Artisans, Paris</p>
+              <p>123 Rue des Artisans, 26000 Valence</p>
             </li>
             <li className="flex justify-center lg:justify-start items-center">
               <Phone className="mr-2" />

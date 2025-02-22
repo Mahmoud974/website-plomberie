@@ -152,7 +152,7 @@ export default function page() {
             {/* Section Pose d'équipements sanitaires */}
             <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/toilets.jpg"
+                src="/toilets.jpg.jpg"
                 alt="Pose d’équipements sanitaires"
                 width={500}
                 height={500}
@@ -168,81 +168,44 @@ export default function page() {
           </div>
 
           <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            {`Les 5 étapes clés pour réussir l'installation d'une climatisation`}
+            {` Les 5 étapes clés pour réussir l'installation de vos équipements de
+            plomberie`}
           </h5>
           <ol className="list-decimal">
             <li>
-              <strong>{`L'analyse des besoins :`}</strong> avant de choisir un
-              système de climatisation, il est important de déterminer les
-              besoins de refroidissement de votre habitation.
+              <strong>{`L'analyse des besoins :`}</strong>{" "}
+              {`Avant de procéder à
+              l'installation de vos équipements sanitaires, il est essentiel de
+              comprendre les besoins en termes d'espace, de fonctionnalité et de
+              consommation d'eau de votre habitation.`}
             </li>
             <li>
-              <strong>Le choix du système :</strong> une fois les besoins
-              évalués, il est temps de choisir le système de climatisation
-              adapté à vos attentes de rafraîchissement.
+              <strong>Le choix des équipements :</strong>{" "}
+              {`En fonction des
+              besoins, nous sélectionnons les équipements les mieux adaptés à
+              vos attentes, qu'il s'agisse de lavabos, de douches, de WC ou de
+              chauffe-eau.`}
             </li>
             <li>
               <strong>{`L'installation :`}</strong>{" "}
-              {`elle doit être réalisée par
-              un professionnel qualifié pour garantir votre sécurité. Elle
-              consiste en la fixation de l'unité extérieure et de l'unité
-              intérieure, le raccordement des tuyaux de réfrigération et des
-              conduites d'eau ainsi que le câblage électrique.`}
+              {`Cette étape doit être réalisée
+              par un plombier qualifié pour garantir la sécurité et la
+              durabilité de vos installations. Elle comprend le raccordement des
+              canalisations, le montage des équipements sanitaires et la
+              vérification des systèmes d'alimentation en eau.`}
             </li>
             <li>
               <strong>La mise en service :</strong>{" "}
-              {`lors de la mise en service,
-              des tests sont effectués pour vérifier l'étanchéité du système, la
-              connexion des conduites et les réglages.`}
+              {`Après installation, nous
+              effectuons des tests pour vérifier l'étanchéité des installations
+              et assurer leur bon fonctionnement, sans fuites ni anomalies.`}
             </li>
             <li>
-              <strong>{`L'entretien :`}</strong> cette dernière étape est
-              primordiale pour garantir le bon fonctionnement de votre
-              climatisation et prolonger sa durée de vie. Il consiste à changer
-              régulièrement les filtres, vérifier les tuyaux de réfrigération,
-              nettoyer les unités intérieures et extérieures.
-            </li>
-          </ol>
-          <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            Les avantages de la climatisation réversible
-          </h5>
-          <ol className="list-decimal">
-            <li>
-              <strong>
-                {`Une consommation d'électricité moins importante que les systèmes
-                de chauffage électrique :`}
-              </strong>{" "}
-              {`  l'utilisation de la chaleur de l'air extérieur plutôt que la
-              génération de chaleur à partir de zéro réduit la note.`}
-            </li>
-            <li>
-              <strong>Une solution tout-en-un</strong> pour maintenir une
-              {`  température confortable toute l'année dans les zones à climat`}
-              modéré.
-            </li>
-            <li>
-              <strong>Une amélioration du confort</strong> grâce à un contrôle
-              {` précis de la température, de l'humidité et de la ventilation des
-              espaces.`}
-            </li>
-            <li>
-              <strong>Une mise en place plus simple</strong>{" "}
-              {`qu'une
-              multiplication des systèmes de chauffage et climatisation.`}
-            </li>
-            <li>
-              <strong>
-                Une réduction des émissions de gaz à effet de serre
-              </strong>{" "}
-              grâce au système de pompe à chaleur.
-            </li>
-            <li>
-              <strong>
-                Une facilité de programmation et de contrôle à distance
-              </strong>{" "}
-              {`permettant d'ajuster la température et par conséquent de réaliser
-              des économies d'énergie en optimisant les périodes de
-              fonctionnement.`}
+              <strong>{`L'entretien :`}</strong> Pour garantir la longévité de
+              vos installations, un entretien régulier est essentiel. Cela
+              comprend le nettoyage des canalisations, la vérification des
+              joints et des raccords, et la maintenance des chauffe-eaux et
+              autres systèmes de plomberie.
             </li>
           </ol>
         </div>
