@@ -152,7 +152,7 @@ export default function page() {
             {/* Section Pose d'équipements sanitaires */}
             <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/toilets.jpg.jpg"
+                src="/pose.webp"
                 alt="Pose d’équipements sanitaires"
                 width={500}
                 height={500}

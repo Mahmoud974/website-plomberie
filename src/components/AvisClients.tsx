@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee";
 import Image from "next/image";
+import { Star } from "lucide-react";
 
 const reviews = [
   {
@@ -8,36 +9,42 @@ const reviews = [
     username: "@marc.dupont",
     body: "Service de plomberie exceptionnel ! Intervention rapide et travail soigné. Merci encore.",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
+    rating: 5,
   },
   {
     name: "Sophie Lambert",
     username: "@sophie.lambert",
     body: "Très satisfaite du remplacement de ma chaudière. Travail efficace et professionnel.",
     img: "https://randomuser.me/api/portraits/women/45.jpg",
+    rating: 4,
   },
   {
     name: "Julien Moreau",
     username: "@julien.moreau",
     body: "Un vrai expert ! Dépannage en urgence pour une fuite, intervention rapide et impeccable.",
     img: "https://randomuser.me/api/portraits/men/12.jpg",
+    rating: 5,
   },
   {
     name: "Nathalie Roux",
     username: "@nathalie.roux",
     body: "Installation de ma salle de bain parfaite ! Très bons conseils et finitions impeccables.",
     img: "https://randomuser.me/api/portraits/women/29.jpg",
+    rating: 5,
   },
   {
     name: "Laurent Girard",
     username: "@laurent.girard",
     body: "Entretien annuel de ma chaudière effectué avec sérieux. Entreprise de confiance.",
     img: "https://randomuser.me/api/portraits/men/56.jpg",
+    rating: 4,
   },
   {
     name: "Émilie Caron",
     username: "@emilie.caron",
     body: "Un artisan compétent et ponctuel ! Débouchage rapide de mes canalisations.",
     img: "https://randomuser.me/api/portraits/women/38.jpg",
+    rating: 5,
   },
 ];
 
@@ -48,16 +55,18 @@ const ReviewCard = ({
   name,
   username,
   body,
+  rating,
 }: {
   img: string;
   name: string;
   username: string;
   body: string;
+  rating: number;
 }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-64  cursor-pointer overflow-hidden rounded-xl border p-4 shadow-lg",
+        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 shadow-lg",
         "border-gray-300 bg-white hover:bg-gray-100",
         "dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
       )}
@@ -77,8 +86,25 @@ const ReviewCard = ({
           <p className="text-xs text-gray-600 dark:text-gray-400">{username}</p>
         </div>
       </div>
+
+      {/* Affichage des étoiles */}
+      <div className="flex items-center mt-2">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Star
+            key={index}
+            size={16}
+            className={cn(
+              "text-yellow-500",
+              index < rating
+                ? "fill-yellow-500"
+                : "fill-gray-300 dark:fill-gray-600"
+            )}
+          />
+        ))}
+      </div>
+
       <blockquote className="mt-3 text-sm text-gray-700 dark:text-gray-300">
-        "{body}"
+        &ldquo;{body}&rdquo;
       </blockquote>
     </figure>
   );
@@ -86,7 +112,7 @@ const ReviewCard = ({
 
 export function MarqueeDemo() {
   return (
-    <div className="relative mt-12 flex w-full flex-col items-center justify-center overflow-hidden   dark:bg-gray-900 py-12">
+    <div className="relative mt-12 flex w-full flex-col items-center justify-center overflow-hidden dark:bg-gray-900 py-12">
       <div className="space-y-4 mb-4 text-center">
         <div className="flex items-center justify-center">
           <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
@@ -96,7 +122,7 @@ export function MarqueeDemo() {
           <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
         </div>
         <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-          Des clients plus que satisfait
+          Des clients plus que satisfaits
         </h2>
       </div>
 
@@ -106,7 +132,6 @@ export function MarqueeDemo() {
         ))}
       </Marquee>
 
-      {/* Dégradé pour effet visuel */}
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-gray-50 dark:from-gray-900"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-gray-50 dark:from-gray-900"></div>
     </div>

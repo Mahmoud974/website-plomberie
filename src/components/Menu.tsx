@@ -82,7 +82,7 @@ export default function Menu() {
                   width={500}
                   height={500}
                   alt="Logo"
-                  className="w-40"
+                  className="w-56"
                 />
               </Link>
               <MiniMenu />
