@@ -8,6 +8,7 @@ import HomeIcons from "@/components/HomeIcons";
 import { QuestionsReponses } from "@/components/QuestionsReponses";
 import Avantage from "@/components/Avantage";
 import { MarqueeDemo } from "@/components/AvisClients";
+import Motor from "@/components/Motor";
 
 export default function page() {
   return (
@@ -31,6 +32,7 @@ export default function page() {
       </div>
 
       <HomeIcons />
+      {/* <Motor /> */}
 
       <div className="container lg:mx-auto lg:px-0 px-8">
         <h5 className="text-2xl font-extrabold mt-6 mx-auto text-center">

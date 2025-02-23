@@ -8,7 +8,7 @@ import { MenuMobile } from "./MenuMobile";
 export default function Menu() {
   return (
     <>
-      <nav className="lg:hidden flex flex-col justify-between absolute top-0 left-0 w-full z-10  ">
+      <nav className="lg:hidden  flex flex-col justify-between absolute top-0 left-0 w-full z-10  ">
         <div className="bg-[#FFCC2B] h-10 flex items-center justify-between text-black text-sm font-medium px-4">
           <div className="container flex items-center justify-between mx-auto">
             <div className="flex  items-center gap-4">
@@ -45,10 +45,10 @@ export default function Menu() {
           <MenuMobile />
         </div>
       </nav>
-      <nav className="relative lg:flex hidden">
+      <nav className="relative  lg:flex hidden">
         {/* Menu en haut, position absolue */}
-        <div className="absolute top-0 left-0 w-full z-10">
-          <div className="bg-[#FFCC2B] h-10 flex items-center justify-between text-black text-sm font-medium px-4">
+        <div className="absolute top-0 left-0 w-full z-10 ">
+          <div className="bg-[#FFCC2B]  h-10 flex items-center justify-between text-black text-sm font-medium px-4">
             <div className="container flex items-center justify-between mx-auto">
               <div className="flex  items-center gap-4">
                 <a href="#" className="hover:text-gray-800 transition">
