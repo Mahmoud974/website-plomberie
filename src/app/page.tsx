@@ -8,7 +8,6 @@ import HomeIcons from "@/components/HomeIcons";
 import { QuestionsReponses } from "@/components/QuestionsReponses";
 import Avantage from "@/components/Avantage";
 import { MarqueeDemo } from "@/components/AvisClients";
-import Motor from "@/components/Motor";
 
 export default function page() {
   return (

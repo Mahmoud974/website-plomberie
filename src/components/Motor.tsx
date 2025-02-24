@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Settings, CheckCircle } from "lucide-react";
+import { Settings } from "lucide-react";
 
 export default function Motor() {
   return (

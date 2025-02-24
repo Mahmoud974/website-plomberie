@@ -72,7 +72,7 @@ export default function page() {
             optimale, type de système (monosplit, multisplit, gainable),
             emplacement des unités et meilleur **rapport qualité-prix**. Grâce à
             mes certifications, vous pouvez bénéficier des **aides financières
-            de l’État et d’EDF**.
+            de l’État et d’EDF.
           </p>
 
           <Link href="/contact">
@@ -188,6 +188,17 @@ export default function page() {
               intérieures et extérieures.
             </li>
           </ol>
+          <div className="flex mx-auto justify-center mt-4">
+            <iframe
+              width="860"
+              height="415"
+              src="https://www.youtube.com/embed/m5czH1Q_LfM?si=OQxELZsbKVJiL2dK"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
           <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
             Les avantages de la pompe à chaleur
           </h5>
