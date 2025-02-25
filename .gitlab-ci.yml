@@ -1,0 +1,19 @@
+stages:
+  - build
+  - deploy
+
+ 
+build:
+  stage: build
+  image: docker:20.10.7  
+  services:
+    - docker:19.03.12-dind  
+  script:
+    - docker build -t registry.gitlab.com/your-username/your-repo-name .
+    - docker push registry.gitlab.com/your-username/your-repo-name
+
+# Etape de déploiement (optionnel si tu as une plateforme de déploiement comme AWS, GCP, etc.)
+deploy:
+  stage: deploy
+  script:
+    - echo "Déployer l'image Docker sur votre plateforme"
