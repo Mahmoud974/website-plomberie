@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/clima.jpg"
+          src="/page-clim/clim.jpg"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -31,7 +31,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/clim-3.jpg"
+          src="/page-clim/clim-clean.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}

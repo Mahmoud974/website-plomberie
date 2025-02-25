@@ -16,7 +16,7 @@ export default function page() {
 
       <div className="relative w-full h-[400px]">
         <Image
-          src="/home-1.jpg"
+          src="/home/home-1.jpg"
           alt="Installation Plomberie"
           fill
           className="w-full h-full object-cover"
@@ -31,7 +31,6 @@ export default function page() {
       </div>
 
       <HomeIcons />
-      {/* <Motor /> */}
 
       <div className="container lg:mx-auto lg:px-0 px-8">
         <h5 className="text-2xl font-extrabold mt-6 mx-auto text-center">
@@ -44,7 +43,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8 flex-col container mx-auto justify-center items-center mt-12 lg:gap-28 gap-12">
         <Image
-          src="/HowWork.jpg"
+          src="/home/HowWork.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}

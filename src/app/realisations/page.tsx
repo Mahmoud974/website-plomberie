@@ -10,11 +10,11 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const portfolioImages: string[] = [
-  "/portfolios/portfolio-1.jpg",
-  "/portfolios/portfolio-2.jpg",
-  "/portfolios/portfolio-3.jpg",
-  "/portfolios/portfolio-4.jpg",
-  "/portfolios/portfolio-5.jpg",
+  "/page-porfolios/portfolios/portfolio-1.jpg",
+  "/page-porfolios/portfolios/portfolio-2.jpg",
+  "/page-porfolios/portfolios/portfolio-3.jpg",
+  "/page-porfolios/portfolios/portfolio-4.jpg",
+  "/page-porfolios/portfolios/portfolio-5.jpg",
 ];
 
 export default function Page() {

@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/tools.jpg"
+          src="/page-plomberie/tools.jpg"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -28,7 +28,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/technical.jpg"
+          src="/page-plomberie/technical.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -73,7 +73,7 @@ export default function page() {
             <div className="grid lg:grid-cols-2 gap-8 space-y-6 lg:space-y-0">
               <div className="flex flex-col items-center space-y-6">
                 <Image
-                  src="/realisation.jpg"
+                  src="/page-plomberie/realisation.jpg"
                   alt="Dépannage de plomberie"
                   width={500}
                   height={500}
@@ -90,7 +90,7 @@ export default function page() {
               {/* Deuxième section de détection de fuites */}
               <div className="flex flex-col items-center space-y-6">
                 <Image
-                  src="/fuites.jpg"
+                  src="/page-plomberie/fuites.jpg"
                   alt="Détection de fuites Plomberie"
                   width={500}
                   height={500}
@@ -135,7 +135,7 @@ export default function page() {
             {/* Section Débouchage de canalisations */}
             <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/canalisations.jpg"
+                src="/page-plomberie/canalisations.jpg"
                 alt="Dépannage de plomberie"
                 width={500}
                 height={500}
@@ -152,7 +152,7 @@ export default function page() {
             {/* Section Pose d'équipements sanitaires */}
             <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/pose.webp"
+                src="/page-plomberie/pose.webp"
                 alt="Pose d’équipements sanitaires"
                 width={500}
                 height={500}

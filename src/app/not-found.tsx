@@ -8,17 +8,17 @@ export default function NotFound() {
       <div className="text-center">
         <div>
           <Image
-            src="/404.png"
+            src="/page-error/404.png"
             alt="Page non trouvée"
             className="w-2/3 h-auto mx-auto"
             width={700}
             height={700}
           />
         </div>
-        <p className="text-xl text-yellow-500 mt-4">Page non trouvée</p>
+        <p className="text-xl text-white mt-4">Page non trouvée</p>
         <Link
           href="/"
-          className="mt-4 inline-block bg-yellow-500 text-[#0A2A3D] px-6 py-2   shadow hover:bg-[#020a0e] transition"
+          className="mt-4 inline-block bg-yellow-500 text-[#0A2A3D] px-6 py-2   shadow hover:bg-yellow-400 transition"
         >
           {`Retour à l'accueil`}
         </Link>

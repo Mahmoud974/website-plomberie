@@ -14,7 +14,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/clim.jpg"
+          src="/page-pompes-a-chaleur/pompe-a-chaleur.jpg"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -34,7 +34,7 @@ export default function page() {
 
       <div className="flex lg:flex-row flex-col lg:px-0 px-8  container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/clim-2.jpg"
+          src="/page-pompes-a-chaleur/pompe-a-chaleur-1.jpg"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -122,15 +122,8 @@ export default function page() {
           <p className="text-center">
             {`Vous souhaitez vous orienter vers l'installation d'une pompe à chaleur ? Ces systèmes sont considérés comme les moins énergivores. Selon vos besoins, vous pouvez choisir une pompe à chaleur aérothermique (air-air ou air-eau) ou géothermique (sol-eau).`}
           </p>
-          <div className="flex lg:flex-row flex-col">
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src="/multi.png"
-                alt="Installation Pompes à chaleur"
-                width={500}
-                height={500}
-                className="w-32 h-full object-cover rounded-lg mx-auto"
-              />
+          <div className="flex lg:flex-row flex-col gap-5">
+            <div className="mx-auto flex items-center flex-col justify-center bg-yellow-100 px-6">
               <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
                 Pompe à chaleur Air-Air
               </h4>
@@ -140,14 +133,7 @@ export default function page() {
               </p>
             </div>
 
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src="/multi.png"
-                alt="Installation Pompes à chaleur"
-                width={500}
-                height={500}
-                className="w-32 h-full object-cover rounded-lg mx-auto"
-              />
+            <div className="mx-auto flex flex-col justify-center bg-yellow-100 px-6">
               <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
                 Pompe à chaleur Air-Eau
               </h4>

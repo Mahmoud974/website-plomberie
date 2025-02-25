@@ -5,7 +5,11 @@ import { useState, useEffect, useRef } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const images = ["/pompe-1.jpg", "/pompe-2.jpg", "/pompe-3.jpg"];
+const images = [
+  "/page-pompes-a-chaleur/img-gallery/pompe-1.jpg",
+  "/page-pompes-a-chaleur/img-gallery/pompe-2.jpg",
+  "/page-pompes-a-chaleur/img-gallery/pompe-3.jpg",
+];
 
 export default function ImagesGallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);

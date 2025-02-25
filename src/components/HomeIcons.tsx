@@ -4,25 +4,25 @@ export default function HomeIcons() {
   const features = [
     {
       title: "Installation de chauffage",
-      image: "/icons/key.png",
+      image: "/home/icons/key.png",
       description:
         "Pose et remplacement de pompes à chaleur (PAC) et de chaudières gaz à condensation, fuel ou gaz.",
     },
     {
       title: "Climatisation performante",
-      image: "/icons/clim.png",
+      image: "/home/icons/clim.png",
       description:
         "Installation et maintenance de climatisations pour assurer un confort thermique optimal toute l'année.",
     },
     {
       title: "Travaux de plomberie",
-      image: "/icons/piece.png",
+      image: "/home/icons/piece.png",
       description:
         "Création et modification d’installations : salles de bains, WC, cuisines, robinetterie, douche, baignoire, etc.",
     },
     {
       title: "Dépannage et réparation",
-      image: "/icons/check.png",
+      image: "/home/icons/check.png",
       description:
         "Intervention rapide pour réparer vos pompes à chaleur, chaudières, chauffe-eaux thermodynamiques.",
     },
