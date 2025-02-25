@@ -5,13 +5,13 @@ import React from "react";
 import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
 
-export default function LegalPage() {
+export default function page() {
   return (
     <>
       <Menu />
       <div className="relative w-full h-[350px]">
         <Image
-          src="/legal-bg.jpg"
+          src="/page-mentions-legales/mentions.webp"
           alt="Mentions Légales"
           fill
           className="object-cover w-full h-full"
@@ -28,13 +28,14 @@ export default function LegalPage() {
         </h2>
         <div className="bg-gray-50 p-6 rounded-lg shadow-lg max-w-3xl mx-auto space-y-4">
           <p>
-            <strong>Raison sociale :</strong> ENTREPRISE MARTIN CHAUFFAGE
+            <strong>Raison sociale :</strong> SVB PRESTA
           </p>
           <p>
             <strong>Forme juridique :</strong> Auto-entreprise
           </p>
           <p>
-            <strong>Adresse :</strong> 12 RUE DES MÉTIERS, 69000 LYON, FRANCE
+            <strong>Adresse :</strong> 12 rue des artisans, 26000 Valence,
+            FRANCE
           </p>
           <p>
             <strong>Email :</strong> contact@martin-chauffage.fr

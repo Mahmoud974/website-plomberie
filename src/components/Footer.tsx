@@ -82,7 +82,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-300">
             <li className="flex justify-center lg:justify-start items-center">
               <MapPinned className="mr-2" />
-              <p>123 Rue des Artisans, 26000 Valence</p>
+              <p>123 rue des Artisans, 26000 Valence</p>
             </li>
             <li className="flex justify-center lg:justify-start items-center">
               <Phone className="mr-2" />
@@ -90,7 +90,7 @@ export default function Footer() {
             </li>
             <li className="flex justify-center lg:justify-start items-center">
               <Mail className="mr-2" />
-              <p>contact@maxlines-plomberie.fr</p>
+              <p>contact@svb-presta.fr</p>
             </li>
             <li className="flex justify-center lg:justify-start items-center">
               <Clock10 className="mr-2" />
@@ -144,7 +144,7 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="border-t border-gray-600 mt-10 pt-6 text-center text-gray-400 text-sm">
-        &copy; 2025 L. MAXLINES - Plomberie, Chauffage & Climatisation. Tous
+        &copy; 2025 SVB PRESTA - Plomberie, Chauffage & Climatisation. Tous
         droits réservés.
         <br />
         <Link
@@ -154,10 +154,10 @@ export default function Footer() {
           Mentions légales
         </Link>{" "}
         |
-        <a href="#" className="text-yellow-500 hover:underline">
+        <Link href="/vie-privee" className="text-yellow-500 hover:underline">
           {" "}
-          Conditions générales
-        </a>
+          Vie privée
+        </Link>
       </div>
 
       {/* BOUTON RETOUR EN HAUT */}
