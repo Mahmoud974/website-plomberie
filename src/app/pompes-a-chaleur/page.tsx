@@ -14,8 +14,8 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/page-pompes-a-chaleur/pompe-a-chaleur.jpg"
-          alt="Installation Plomberie"
+          src="/page-pompes-a-chaleur/pompe-a-chaleur.webp"
+          alt="Image d'une pompe à chaleur"
           fill
           className="object-cover w-full h-full"
         />
@@ -34,8 +34,8 @@ export default function page() {
 
       <div className="flex lg:flex-row flex-col lg:px-0 px-8  container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/page-pompes-a-chaleur/pompe-a-chaleur-1.jpg"
-          alt="Installation Plomberie"
+          src="/page-pompes-a-chaleur/pompe-a-chaleur-1.webp"
+          alt="Image d'une pompe à chaleur"
           width={500}
           height={500}
           className="lg:w-[36%] h-full object-cover rounded-lg"

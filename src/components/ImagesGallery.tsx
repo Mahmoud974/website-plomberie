@@ -6,9 +6,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images = [
-  "/page-pompes-a-chaleur/img-gallery/pompe-1.jpg",
-  "/page-pompes-a-chaleur/img-gallery/pompe-2.jpg",
-  "/page-pompes-a-chaleur/img-gallery/pompe-3.jpg",
+  "/page-pompes-a-chaleur/img-gallery/pompe-1.webp",
+  "/page-pompes-a-chaleur/img-gallery/pompe-2.webp",
+  "/page-pompes-a-chaleur/img-gallery/pompe-3.webp",
 ];
 
 export default function ImagesGallery() {
@@ -48,7 +48,7 @@ export default function ImagesGallery() {
           width={500}
           height={500}
           src={img}
-          alt={`Installation ${index + 1}`}
+          alt={`Image de porfolio de pompe à chaleur n° ${index + 1}`}
           className="w-80 h-80 object-cover cursor-pointer rounded-md"
           onClick={() => setSelectedImage(index)}
         />
@@ -79,7 +79,7 @@ export default function ImagesGallery() {
                     height={700}
                     src={img}
                     className="h-auto max-h-[80vh] object-contain rounded-lg"
-                    alt={`Installation ${index + 1}`}
+                    alt={`Image d'innstallation n° ${index + 1}`}
                   />
                 </div>
               ))}

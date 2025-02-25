@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className="text-center">
         <div>
           <Image
-            src="/page-error/404.png"
+            src="/page-error/404.webp"
             alt="Page non trouvée"
             className="w-2/3 h-auto mx-auto"
             width={700}

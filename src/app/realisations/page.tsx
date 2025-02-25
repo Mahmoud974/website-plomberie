@@ -10,11 +10,11 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const portfolioImages: string[] = [
-  "/page-porfolios/portfolios/portfolio-1.jpg",
-  "/page-porfolios/portfolios/portfolio-2.jpg",
-  "/page-porfolios/portfolios/portfolio-3.jpg",
-  "/page-porfolios/portfolios/portfolio-4.jpg",
-  "/page-porfolios/portfolios/portfolio-5.jpg",
+  "/page-realisation/portfolios/portfolio-1.webp",
+  "/page-realisation/portfolios/portfolio-2.webp",
+  "/page-realisation/portfolios/portfolio-3.webp",
+  "/page-realisation/portfolios/portfolio-4.webp",
+  "/page-realisation/portfolios/portfolio-5.webp",
 ];
 
 export default function Page() {
@@ -46,8 +46,8 @@ export default function Page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/realisation.jpg"
-          alt="Installation Plomberie"
+          src="/page-realisation/plombier.webp"
+          alt="Image de réalisations"
           fill
           className="object-cover w-full h-full"
         />
