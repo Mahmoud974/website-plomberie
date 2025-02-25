@@ -12,8 +12,17 @@ build:
     - docker build -t registry.gitlab.com/your-username/your-repo-name .
     - docker push registry.gitlab.com/your-username/your-repo-name
 
-# Etape de déploiement (optionnel si tu as une plateforme de déploiement comme AWS, GCP, etc.)
+ 
 deploy:
   stage: deploy
+  image: amazon/aws-cli:latest  
   script:
-    - echo "Déployer l'image Docker sur votre plateforme"
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set default.region $AWS_DEFAULT_REGION
+    - ecs_cluster_name="nextjs-container"
+    - ecs_service_name="nginxdemos-hello"
+    - ecs_task_definition="nginxdemos-hello"
+    - aws ecs update-service --cluster $ecs_cluster_name --service $ecs_service_name --force-new-deployment
+
+  
