@@ -34,7 +34,7 @@ export default function page() {
 
       <div className="container lg:mx-auto lg:px-0 px-8">
         <h5 className="text-2xl font-extrabold mt-6 mx-auto text-center">
-          Le climatiseur gainable : le choix de la quasi-invisibilité
+          Le climatiseur gainable : le choix de la quasi-invisibilités
         </h5>
         <p className="text-center text-gray-400 max-w-6xl mt-3 mx-auto">
           {`Il s’agit sans conteste de la solution esthétique la plus respectueuse de votre décoration intérieure. Intégrée dans les murs ou les conduits, elle ne laisse apparaître que les grilles par lesquelles l’air climatisé est diffusé dans vos pièces. Grâce à son invisibilité le climatiseur gainable offre un gain de place non négligeable. Très silencieuse et avec peu de mouvement d'air, elle apporte également un confort supérieur à la climatisation réversible classique. Les performances sont très bonnes et les consommations d’énergie sont maîtrisées grâce au pilotage par télécommande individualisé dans chaque pièce.`}
