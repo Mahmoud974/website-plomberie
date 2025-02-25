@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]  ">
         <Image
-          src="/page-chauffage/chauffage-1.jpg"
+          src="/page-chauffage/chauffage-1.webp"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -30,7 +30,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/page-chauffage/chauffage.png"
+          src="/page-chauffage/chauffage.webp"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -74,7 +74,7 @@ export default function page() {
         <div className="flex lg:flex-row flex-col lg:px-0 px-8   justify-center gap-6">
           <div className="border p-6 rounded-lg shadow-lg   max-w-xl bg-white">
             <Image
-              src="/page-chauffage/chaudiere.png"
+              src="/page-chauffage/chaudiere.webp"
               alt="Installation Plomberie"
               width={100}
               height={100}
@@ -91,7 +91,7 @@ export default function page() {
 
           <div className="border p-6 rounded-lg shadow-lg flex-1  max-w-xl bg-white">
             <Image
-              src="/page-chauffage/pompes.png"
+              src="/page-chauffage/pompes.webp"
               alt="Installation Plomberie"
               width={100}
               height={100}

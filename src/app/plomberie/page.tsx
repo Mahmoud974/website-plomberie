@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/page-plomberie/tools.jpg"
+          src="/page-plomberie/tools.webp"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -28,7 +28,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/page-plomberie/technical.jpg"
+          src="/page-plomberie/technical.webp"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -73,7 +73,7 @@ export default function page() {
             <div className="grid lg:grid-cols-2 gap-8 space-y-6 lg:space-y-0">
               <div className="flex flex-col items-center space-y-6">
                 <Image
-                  src="/page-plomberie/realisation.jpg"
+                  src="/page-plomberie/realisation.webp"
                   alt="Dépannage de plomberie"
                   width={500}
                   height={500}
@@ -90,7 +90,7 @@ export default function page() {
               {/* Deuxième section de détection de fuites */}
               <div className="flex flex-col items-center space-y-6">
                 <Image
-                  src="/page-plomberie/fuites.jpg"
+                  src="/page-plomberie/fuites.webp"
                   alt="Détection de fuites Plomberie"
                   width={500}
                   height={500}
@@ -135,7 +135,7 @@ export default function page() {
             {/* Section Débouchage de canalisations */}
             <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/page-plomberie/canalisations.jpg"
+                src="/page-plomberie/canalisations.webp"
                 alt="Dépannage de plomberie"
                 width={500}
                 height={500}

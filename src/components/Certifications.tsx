@@ -10,35 +10,35 @@ export default function Certifications() {
         </h3>
         <div className="flex items-center lg:flex-row flex-col gap-10 my-6 justify-between mx-44">
           <Image
-            src="/certifs/rge.png"
+            src="/certifs/rge.webp"
             alt="Installation Plomberie"
             width={500}
             height={500}
             className="w-44 h-full object-cover rounded-lg"
           />
           <Image
-            src="/certifs/frisquet.png"
+            src="/certifs/frisquet.webp"
             alt="Installation Plomberie"
             width={800}
             height={800}
             className="w-36 h-full object-cover rounded-lg"
           />
           <Image
-            src="/certifs/qualibat.png"
+            src="/certifs/qualibat.webp"
             alt="Installation Plomberie"
             width={800}
             height={800}
             className="w-20 h-full object-cover rounded-lg"
           />
           <Image
-            src="/certifs/gaz.png"
+            src="/certifs/gaz.webp"
             alt="Installation Plomberie"
             width={800}
             height={800}
             className="w-20 h-full object-cover rounded-lg"
           />
           <Image
-            src="/certifs/viessmann.png"
+            src="/certifs/viessmann.webp"
             alt="Installation Plomberie"
             width={800}
             height={800}

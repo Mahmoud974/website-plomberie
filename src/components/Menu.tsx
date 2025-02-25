@@ -34,7 +34,7 @@ export default function Menu() {
         <div className="flex justify-between items-center mt-2 px-3">
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               width={500}
               height={500}
               alt="Logo plomberie"

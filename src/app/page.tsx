@@ -16,8 +16,8 @@ export default function page() {
 
       <div className="relative w-full h-[400px]">
         <Image
-          src="/home/home-1.jpg"
-          alt="Installation Plomberie"
+          src="/home/home.webp"
+          alt="Image d'accueil parlant avec une femme de la prestation "
           fill
           className="w-full h-full object-cover"
         />
@@ -43,8 +43,8 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8 flex-col container mx-auto justify-center items-center mt-12 lg:gap-28 gap-12">
         <Image
-          src="/home/HowWork.jpg"
-          alt="Installation Plomberie"
+          src="/home/man-works.webp"
+          alt="Image d'un homme qui répare la plomberie"
           width={500}
           height={500}
           className="lg:w-[36%] h-full object-cover rounded-lg"

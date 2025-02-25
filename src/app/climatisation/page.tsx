@@ -12,7 +12,7 @@ export default function page() {
       <Menu />
       <div className="relative w-full h-[400px]">
         <Image
-          src="/page-clim/clim.jpg"
+          src="/page-clim/clim.webp"
           alt="Installation Plomberie"
           fill
           className="object-cover w-full h-full"
@@ -31,7 +31,7 @@ export default function page() {
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/page-clim/clim-clean.jpg"
+          src="/page-clim/clim-clean.webp"
           alt="Installation Plomberie"
           width={500}
           height={500}
@@ -92,7 +92,7 @@ export default function page() {
           <div className="flex lg:flex-row flex-col">
             <div className="mx-auto flex flex-col justify-center">
               <Image
-                src="/page-clim/single-clim.png"
+                src="/page-clim/single-clim.webp"
                 alt="Installation Plomberie"
                 width={500}
                 height={500}
@@ -109,7 +109,7 @@ export default function page() {
 
             <div className="mx-auto flex flex-col justify-center">
               <Image
-                src="/page-clim/multi-clim.png"
+                src="/page-clim/multi-clim.webp"
                 alt="Installation Plomberie"
                 width={500}
                 height={500}

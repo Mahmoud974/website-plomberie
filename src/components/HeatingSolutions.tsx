@@ -5,14 +5,14 @@ export default function HeatingSolutions() {
   const solutions = [
     {
       title: "Pompe à chaleur",
-      image: "/mini-menu/pompe-a-chaleur.jpg",
+      image: "/mini-menu/pompe-a-chaleur.webp",
       link: "/pompes-a-chaleur",
       description:
         "Profitez de l’aérothermie pour chauffer efficacement votre intérieur en utilisant l’air, une énergie renouvelable. Que ce soit une pompe à chaleur air/air ou air/eau, trouvez la solution adaptée à votre logement.",
     },
     {
       title: "Chauffage",
-      image: "/mini-menu/chauffage.jpg",
+      image: "/mini-menu/chauffage.webp",
       link: "/chauffage",
       description:
         "Profitez d’un chauffage performant et économique, alliant confort et efficacité énergétique. Que vous optiez pour une solution au bois, au gaz ou aux énergies renouvelables, bénéficiez d’une chaleur douce et homogène tout en réduisant votre empreinte carbone.",
@@ -26,7 +26,7 @@ export default function HeatingSolutions() {
     },
     {
       title: "Plomberie",
-      image: "/mini-menu/plomberie.jpg",
+      image: "/mini-menu/plomberie.webp",
       link: "/plomberie",
       description:
         "Assurez un réseau de plomberie fiable et performant pour votre confort au quotidien. De l’installation à l’entretien, nous vous accompagnons pour garantir une distribution efficace en eau et des équipements adaptés à vos besoins.",
