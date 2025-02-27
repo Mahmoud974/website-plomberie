@@ -8,27 +8,18 @@ import HomeIcons from "@/components/HomeIcons";
 import { QuestionsReponses } from "@/components/QuestionsReponses";
 import Avantage from "@/components/Avantage";
 import { MarqueeDemo } from "@/components/AvisClients";
+import Banner from "@/components/Banner";
 
 export default function page() {
   return (
     <>
       <Menu />
-
-      <div className="relative w-full h-[400px]">
-        <Image
-          src="/home/home.webp"
-          alt="Image d'accueil parlant avec une femme de la prestation "
-          fill
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 pt-12 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-4xl font-extrabold">Home</h1>
-          <div className="bg-yellow-500 h-1 w-24 mt-2"></div>
-          <p className="text-white text-lg max-w-xl mt-4">
-            {`L’été arrive à grands pas ! Préparez-vous aux fortes chaleurs en installant un système de climatisation adapté à votre maison. ☀️❄️`}
-          </p>
-        </div>
-      </div>
+      <Banner
+        name="/home/home.webp"
+        alt="Image d'accueil parlant avec une femme de la prestation "
+        title="Home"
+        text="L’été arrive à grands pas ! Préparez-vous aux fortes chaleurs en installant un système de climatisation adapté à votre maison. ☀️❄️"
+      />
 
       <HomeIcons />
 

@@ -8,6 +8,7 @@ import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Banner from "@/components/Banner";
 
 const portfolioImages: string[] = [
   "/page-realisation/portfolios/portfolio-1.webp",
@@ -44,23 +45,14 @@ export default function Page() {
   return (
     <>
       <Menu />
-      <div className="relative w-full h-[400px]">
-        <Image
-          src="/page-realisation/plombier.webp"
-          alt="Image de réalisations"
-          fill
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute inset-0 pt-12 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-4xl font-extrabold">Réalisations</h1>
-          <div className="bg-yellow-500 h-1 w-24 mt-2"></div>
-          <p className="text-white text-lg max-w-xl mt-4">
-            {`Nos experts en chauffage vous conseillent sur les solutions adaptées
+      <Banner
+        name="/page-realisation/plombier.webp"
+        alt="Image d'un plombier'"
+        title="Réalisations"
+        text="Nos experts en chauffage vous conseillent sur les solutions adaptées
             à vos besoins, que ce soit pour l'installation, l'entretien ou la
-            réparation de vos équipements.`}
-          </p>
-        </div>
-      </div>
+            réparation de vos équipements."
+      />
 
       <section className="py-12 px-4 md:px-12">
         <div className="space-y-4 mb-4 text-center">

@@ -5,26 +5,18 @@ import Image from "next/image";
 import React from "react";
 import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
+import Banner from "@/components/Banner";
 
 export default function page() {
   return (
     <>
       <Menu />
-      <div className="relative w-full h-[400px]">
-        <Image
-          src="/page-plomberie/tools.webp"
-          alt="Installation Plomberie"
-          fill
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute inset-0 pt-12 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-4xl font-extrabold">Plomberie</h1>
-          <div className="bg-yellow-500 h-1 w-24 mt-2"></div>
-          <p className="text-white text-lg max-w-xl mt-4">
-            {`Nos experts en plomberie vous conseillent pour l'installation, l'entretien ou la réparation de vos équipements. Demandez un devis personnalisé pour vos besoins spécifiques.`}
-          </p>
-        </div>
-      </div>
+      <Banner
+        name="/page-plomberie/tools.webp"
+        alt="Image d'une personne qui repare la plomberie"
+        title="Plomberie"
+        text="Nos experts en plomberie vous conseillent pour l'installation, l'entretien ou la réparation de vos équipements. Demandez un devis personnalisé pour vos besoins spécifiques."
+      />
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image

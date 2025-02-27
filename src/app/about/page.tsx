@@ -1,9 +1,9 @@
+import Banner from "@/components/Banner";
 import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 import HeatingSolutions from "@/components/HeatingSolutions";
 import Menu from "@/components/Menu";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,18 +11,12 @@ export default function About() {
   return (
     <>
       <Menu />
-      <div className="relative w-full h-[400px]">
-        <Image
-          src="/plomb-2.jpg"
-          alt="Plombier Chauffagiste Valence"
-          fill
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-4xl font-extrabold">À Propos</h1>
-          <div className="bg-yellow-500 h-1 w-24 mt-2"></div>
-        </div>
-      </div>
+      <Banner
+        name="/plomb-2.jpg"
+        alt="Image d'un plombier"
+        title="À Propos"
+        text="Notre entreprise de plomberie à Valence vous propose des services professionnels pour l’installation, la réparation et la maintenance de vos équipements sanitaires et de chauffage. "
+      />
 
       <div className="container text-center mx-auto px-6 py-12 space-y-8">
         {/* Introduction */}

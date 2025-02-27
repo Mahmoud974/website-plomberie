@@ -1,26 +1,20 @@
 import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
-import Image from "next/image";
 import React from "react";
 import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
+import Banner from "@/components/Banner";
 
 export default function page() {
   return (
     <>
       <Menu />
-      <div className="relative w-full h-[350px]">
-        <Image
-          src="/page-mentions-legales/mentions.webp"
-          alt="Mentions Légales"
-          fill
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-4xl font-bold">Mentions Légales</h1>
-          <div className="bg-yellow-500 h-1 w-24 mt-3"></div>
-        </div>
-      </div>
+      <Banner
+        name="/page-mentions-legales/mentions.webp"
+        alt="Mentions Légales"
+        title="Mentions Légales"
+        text="Les informations recueillies sur ce site sont destinées à SVB PRESTA et seront utilisées dans le respect de la législation en vigueur sur la protection des données personnelles."
+      />
 
       <div className="container mx-auto mt-12 px-6">
         <h2 className="text-3xl font-bold text-center mb-6">

@@ -1,24 +1,18 @@
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
-import Image from "next/image";
 import React from "react";
 
 export default function PrivacyPolicyPage() {
   return (
     <>
       <Menu />
-      <div className="relative w-full h-[350px]">
-        <Image
-          src="/page-mentions-legales/privacy.webp"
-          alt="Politique de Confidentialité"
-          fill
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-4xl font-bold">Vie privée</h1>
-          <div className="bg-yellow-500 h-1 w-24 mt-3"></div>
-        </div>
-      </div>
+      <Banner
+        name="/page-mentions-legales/privacy.webp"
+        alt="Politique de Confidentialité"
+        title="Vie privée"
+        text="Nous respectons la confidentialité de vos données personnelles. Les informations collectées sont utilisées uniquement pour répondre à vos demandes et améliorer nos services."
+      />
 
       <div className="container mx-auto mt-12 px-6">
         <h2 className="text-3xl font-bold text-center mb-6">
