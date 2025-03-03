@@ -78,7 +78,7 @@ export default function Menu() {
             <div className="container flex items-center justify-between mx-auto">
               <Link href="/">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   width={500}
                   height={500}
                   alt="Logo"
