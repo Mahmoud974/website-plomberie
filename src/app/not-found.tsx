@@ -15,7 +15,7 @@ export default function NotFound() {
             height={700}
           />
         </div>
-        <p className="text-xl text-white mt-4">Page non trouvée</p>
+      
         <Link
           href="/"
           className="mt-4 inline-block bg-yellow-500 text-[#0A2A3D] px-6 py-2   shadow hover:bg-yellow-400 transition"

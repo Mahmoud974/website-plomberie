@@ -10,11 +10,11 @@ import Link from "next/link";
 export function MiniMenu() {
   return (
     <Menubar className="bg-transparent shadow-none uppercase text-white border-none cursor-pointer flex items-center gap-4">
-      {/* Home */}
+      
       <MenubarMenu>
         <Link href="/">
           <MenubarTrigger className="relative cursor-pointer transition-all duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-yellow-500 hover:after:w-full after:transition-all after:duration-300">
-            HOME
+            ACCUEIL
           </MenubarTrigger>
         </Link>
       </MenubarMenu>

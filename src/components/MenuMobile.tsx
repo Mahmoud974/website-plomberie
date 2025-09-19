@@ -30,7 +30,7 @@ export function MenuMobile() {
               href="/"
               className="hover:underline text-2xl   hover:text-yellow-500"
             >
-              HOME
+              ACCUEIL
             </Link>
           </li>
           <li>
@@ -109,7 +109,7 @@ export function MenuMobile() {
           <p>26000 | Valence</p>
         </div>
         <SheetFooter>
-          <div className="flex space-x-4 justify-center">
+          <div className="flex space-x-4 justify-center mx-auto">
             <a
               href="https://www.facebook.com"
               target="_blank"

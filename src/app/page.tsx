@@ -17,7 +17,7 @@ export default function page() {
       <Banner
         name="/home/home.webp"
         alt="Image d'accueil parlant avec une femme de la prestation "
-        title="Home"
+        title="Accueil"
         text="L’été arrive à grands pas ! Préparez-vous aux fortes chaleurs en installant un système de climatisation adapté à votre maison. ☀️❄️"
       />
 
