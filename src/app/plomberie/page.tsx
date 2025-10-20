@@ -7,30 +7,32 @@ import Certifications from "../../components/Certifications";
 import HeatingSolutions from "@/components/HeatingSolutions";
 import Banner from "@/components/Banner";
 
-export default function page() {
+export default function Page() {
   return (
     <>
       <Menu />
       <Banner
-        name="/page-plomberie/tools.webp"
-        alt="Image d'une personne qui repare la plomberie"
+        name="/page-plomberie/plomberie-installation-reparation-valence-rs-presta.webp"
+        alt="Plombier RS PRESTA à Valence effectuant l’installation d’un système de plomberie moderne"
         title="Plomberie"
-        text="Nos experts en plomberie vous conseillent pour l'installation, l'entretien ou la réparation de vos équipements. Demandez un devis personnalisé pour vos besoins spécifiques."
+        text="Nos plombiers experts à Valence interviennent pour l'installation, l'entretien et la réparation de vos équipements sanitaires. Bénéficiez d’un service rapide et fiable, adapté à vos besoins."
       />
 
-      <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
+      {/* Section présentation */}
+      <section className="flex lg:flex-row lg:px-0 px-8 flex-col container mx-auto justify-center items-center mt-12 gap-14">
         <Image
-          src="/page-plomberie/technical.webp"
-          alt="Installation Plomberie"
+          src="/page-plomberie/plombier-professionnel-installation-tuyauterie-valence-rs-presta.webp"
+          alt="Technicien RS PRESTA installant un réseau de plomberie à Valence"
           width={500}
           height={500}
           className="lg:w-[36%] h-full object-cover rounded-lg"
+          loading="lazy"
         />
+
         <div className="space-y-6 max-w-xl">
-          {/* Titre Section */}
           <div className="flex items-center">
             <p className="text-yellow-500 font-bold uppercase">
-              Installation Plomberie à Valence
+              Installation plomberie à Valence
             </p>
             <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
           </div>
@@ -40,170 +42,130 @@ export default function page() {
           </h2>
 
           <p>
-            {`Le choix de votre installation de plomberie dépend de plusieurs critères : la taille de votre habitation, le nombre de points d’eau, ainsi que l’état de votre réseau existant. Il est essentiel de prendre en compte ces éléments pour garantir une installation fiable et durable.`}
+            Le choix de votre installation de plomberie dépend de plusieurs
+            critères : la taille de votre habitation, le nombre de points d’eau
+            et l’état de votre réseau existant. Une bonne planification garantit
+            la fiabilité et la durabilité de votre système.
           </p>
 
           <p>
-            {`Après une analyse approfondie, je vous proposerai la solution la plus adaptée à vos besoins : matériaux, type de tuyauterie, ainsi que l’emplacement idéal des installations. Nous veillerons également à optimiser le rapport qualité-prix.`}
+            Après une analyse précise, nous vous proposons la solution la plus
+            adaptée : sélection des matériaux, type de tuyauterie, et
+            positionnement optimal des installations pour allier confort et
+            performance.
           </p>
 
           <p>
-            {`Bénéficiez d’une installation de plomberie efficace, sécurisée et parfaitement intégrée à votre logement pour un confort quotidien.`}
+            Faites confiance à RS PRESTA pour une installation efficace,
+            sécurisée et durable, intégrée harmonieusement à votre logement.
           </p>
 
           <Button className="bg-yellow-500 text-white font-bold py-2 px-6 rounded-md hover:bg-yellow-600 transition">
             Demander un devis
           </Button>
         </div>
-      </div>
+      </section>
 
       <Certifications />
 
-      <div className="flex justify-center container mx-auto mt-8">
-        <div className="space-y-6">
-          <div className="flex justify-center container mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8 space-y-6 lg:space-y-0">
-              <div className="flex flex-col items-center space-y-6">
-                <Image
-                  src="/page-plomberie/realisation.webp"
-                  alt="Dépannage de plomberie"
-                  width={500}
-                  height={500}
-                  className="lg:w-96 h-48 object-cover rounded-lg"
-                />
-                <p className="text-2xl font-bold text-center">
-                  Dépannage express
-                </p>
-                <p className="text-center max-w-md">
-                  {`Lorsqu'une panne survient, il est essentiel d'agir rapidement pour éviter des conséquences majeures. Que ce soit pour une fuite, un tuyau bouché ou une installation défectueuse, notre équipe de plombiers est là pour intervenir avec efficacité. Nous offrons un dépannage rapide, professionnel et durable, afin de restaurer le bon fonctionnement de vos installations.`}
-                </p>
-              </div>
+      {/* Section dépannage et fuites */}
+      <section className="container mx-auto mt-12 px-6 lg:px-0">
+        <h2 className="text-center text-3xl font-extrabold mb-10">
+          Nos interventions rapides en plomberie
+        </h2>
 
-              {/* Deuxième section de détection de fuites */}
-              <div className="flex flex-col items-center space-y-6">
-                <Image
-                  src="/page-plomberie/fuites.webp"
-                  alt="Détection de fuites Plomberie"
-                  width={500}
-                  height={500}
-                  className="lg:w-96 h-48 object-cover rounded-lg"
-                />
-                <p className="text-2xl font-bold text-center">
-                  Détection de fuites avancée
-                </p>
-                <p className="text-center max-w-md">
-                  {`La détection précoce des fuites est cruciale pour éviter des dommages coûteux à vos installations. Grâce à notre technologie de pointe, nous localisons les fuites rapidement et précisément, sans causer de dommages à vos murs ou sols. Faites confiance à notre expertise pour une solution rapide et efficace, permettant de préserver l'intégrité de votre système de plomberie.`}
-                </p>
-              </div>
-            </div>
+        <div className="grid lg:grid-cols-2 gap-10">
+          <div className="text-center space-y-5">
+            <Image
+              src="/page-plomberie/depannage-plomberie-valence-rs-presta.webp"
+              alt="Dépannage express de plomberie à Valence par RS PRESTA"
+              width={500}
+              height={500}
+              className="w-full h-48 object-cover rounded-lg"
+              loading="lazy"
+            />
+            <h3 className="text-2xl font-bold">Dépannage express</h3>
+            <p>
+              Une fuite ou un dysfonctionnement ? Nos plombiers interviennent
+              rapidement pour réparer vos installations, éviter les dégâts
+              d’eau et garantir votre confort quotidien.
+            </p>
+          </div>
+
+          <div className="text-center space-y-5">
+            <Image
+              src="/page-plomberie/detection-fuites-eau-valence-rs-presta.webp"
+              alt="Technicien détectant une fuite d’eau avec appareil professionnel à Valence"
+              width={500}
+              height={500}
+              className="w-full h-48 object-cover rounded-lg"
+              loading="lazy"
+            />
+            <h3 className="text-2xl font-bold">Détection de fuites avancée</h3>
+            <p>
+              Grâce à des outils modernes (caméra thermique, gaz traceur),
+              nous localisons les fuites sans destruction et préservons
+              l’intégrité de vos installations.
+            </p>
           </div>
         </div>
-      </div>
-      <div className="flex container lg:px-0 px-8  mx-auto justify-center items-center my-12 gap-14">
-        <div className="space-y-4  max-w-5xl mx-auto">
-          <div className="flex items-center justify-center">
-            <div className="bg-yellow-500 h-[0.15rem] w-20 mr-3"></div>
-            <p className="text-yellow-500 font-bold">NOS SERVICES</p>
-            <div className="bg-yellow-500 h-[0.15rem] w-20 ml-3"></div>
-          </div>
+      </section>
 
-          <h2 className="text-3xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            Des prestations sur-mesure pour vos besoins en plomberie
+      {/* Section services */}
+      <section className="container mx-auto my-16 px-6 lg:px-0">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-extrabold">
+            Nos services de plomberie à Valence
           </h2>
-
-          <p className="text-center  mx-auto mt-4">
-            {`Notre équipe de plombiers experts est à votre disposition pour tous vos travaux de plomberie, qu'il s'agisse de l'installation de nouveaux équipements, de la réparation de fuites, ou de l'entretien de vos installations. 
-  Nous intervenons également pour le débouchage de canalisations, la pose de chauffe-eau et bien plus encore, en garantissant un service rapide et de qualité. 
-  Avec Eco Thermes, vous bénéficiez de solutions adaptées à vos besoins, réalisées dans les plus brefs délais.`}
+          <p className="mt-3 text-gray-700 max-w-3xl mx-auto">
+            RS PRESTA prend en charge tous vos besoins : débouchage de
+            canalisations, installation sanitaire, entretien et réparation
+            complète de vos équipements.
           </p>
-          <p className="bg-yellow-100 text-center">
-            Nous nous occupons de tous vos travaux de plomberie, qu’il s’agisse
-            de débouchage, de réparations ou d’installations de sanitaires.
-            Professionnels expérimentés, nous veillons à intervenir rapidement
-            et efficacement pour assurer votre confort au quotidien.
-          </p>
+        </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 space-y-6 lg:space-y-0">
-            {/* Section Débouchage de canalisations */}
-            <div className="flex flex-col items-center space-y-6">
-              <Image
-                src="/page-plomberie/canalisations.webp"
-                alt="Dépannage de plomberie"
-                width={500}
-                height={500}
-                className="lg:w-96 h-48 object-cover rounded-lg"
-              />
-              <p className="text-2xl font-bold text-center">
-                Débouchage de canalisations
-              </p>
-              <p className="text-center max-w-md">
-                {`Les canalisations bouchées peuvent causer des désagréments majeurs, affectant le confort et la sécurité de votre habitation. Nous utilisons des équipements adaptés et des techniques modernes pour déboucher vos canalisations de manière rapide et efficace. Qu’il s’agisse d’un dépannage urgent ou d’une intervention de maintenance préventive, nous assurons un service fiable pour éviter tout risque de dégât. Faites appel à nous pour un travail soigné et durable.`}
-              </p>
-            </div>
-
-            {/* Section Pose d'équipements sanitaires */}
-            <div className="flex flex-col items-center space-y-6">
-              <Image
-                src="/page-plomberie/pose.webp"
-                alt="Pose d’équipements sanitaires"
-                width={500}
-                height={500}
-                className="lg:w-96 h-48 object-cover rounded-lg"
-              />
-              <p className="text-2xl font-bold text-center">
-                Pose d’équipements sanitaires
-              </p>
-              <p className="text-center max-w-md">
-                {`Nous prenons en charge l’installation de vos équipements sanitaires, qu’il s’agisse de lavabos, douches, baignoires ou WC. Grâce à notre expertise et à l’utilisation de matériaux de qualité, nous garantissons des installations durables et esthétiques, parfaitement adaptées à vos besoins. Notre priorité est de créer des espaces fonctionnels, pratiques et agréables, tout en veillant à la sécurité et à l’harmonie de votre intérieur.`}
-              </p>
-            </div>
+        <div className="grid lg:grid-cols-2 gap-10">
+          <div className="text-center space-y-5">
+            <Image
+              src="/page-plomberie/debouchage-canalisations-valence-rs-presta.webp"
+              alt="Débouchage de canalisations à Valence par RS PRESTA"
+              width={500}
+              height={500}
+              className="w-full h-48 object-cover rounded-lg"
+              loading="lazy"
+            />
+            <h3 className="text-2xl font-bold">
+              Débouchage de canalisations
+            </h3>
+            <p>
+              Nos équipements haute pression permettent de déboucher vos
+              canalisations efficacement tout en évitant tout dégât à vos
+              installations.
+            </p>
           </div>
 
-          <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-            {` Les 5 étapes clés pour réussir l'installation de vos équipements de
-            plomberie`}
-          </h5>
-          <ol className="list-decimal">
-            <li>
-              <strong>{`L'analyse des besoins :`}</strong>{" "}
-              {`Avant de procéder à
-              l'installation de vos équipements sanitaires, il est essentiel de
-              comprendre les besoins en termes d'espace, de fonctionnalité et de
-              consommation d'eau de votre habitation.`}
-            </li>
-            <li>
-              <strong>Le choix des équipements :</strong>{" "}
-              {`En fonction des
-              besoins, nous sélectionnons les équipements les mieux adaptés à
-              vos attentes, qu'il s'agisse de lavabos, de douches, de WC ou de
-              chauffe-eau.`}
-            </li>
-            <li>
-              <strong>{`L'installation :`}</strong>{" "}
-              {`Cette étape doit être réalisée
-              par un plombier qualifié pour garantir la sécurité et la
-              durabilité de vos installations. Elle comprend le raccordement des
-              canalisations, le montage des équipements sanitaires et la
-              vérification des systèmes d'alimentation en eau.`}
-            </li>
-            <li>
-              <strong>La mise en service :</strong>{" "}
-              {`Après installation, nous
-              effectuons des tests pour vérifier l'étanchéité des installations
-              et assurer leur bon fonctionnement, sans fuites ni anomalies.`}
-            </li>
-            <li>
-              <strong>{`L'entretien :`}</strong> Pour garantir la longévité de
-              vos installations, un entretien régulier est essentiel. Cela
-              comprend le nettoyage des canalisations, la vérification des
-              joints et des raccords, et la maintenance des chauffe-eaux et
-              autres systèmes de plomberie.
-            </li>
-          </ol>
+          <div className="text-center space-y-5">
+            <Image
+              src="/page-plomberie/pose-equipements-sanitaires-valence-rs-presta.webp"
+              alt="Pose de lavabo et douche par RS PRESTA à Valence"
+              width={500}
+              height={500}
+              className="w-full h-48 object-cover rounded-lg"
+              loading="lazy"
+            />
+            <h3 className="text-2xl font-bold">
+              Pose d’équipements sanitaires
+            </h3>
+            <p>
+              Installation de douches, lavabos, baignoires et WC, avec des
+              matériaux durables et esthétiques pour un rendu fonctionnel et
+              harmonieux.
+            </p>
+          </div>
         </div>
-      </div>
-      <HeatingSolutions />
+      </section>
 
+      <HeatingSolutions />
       <Footer />
     </>
   );

@@ -12,23 +12,22 @@ export default function page() {
     <>
       <Menu />
       <Banner
-        name="/page-clim/clim.webp"
-        alt="Image de climatiseur"
-        title="Climatisation"
-        text=" Nos experts en chauffage vous conseillent sur les solutions adaptées
-            à vos besoins, que ce soit pour l'installation, l'entretien ou la
-            réparation de vos équipements. Obtenez un devis personnalisé et des
-            réponses à toutes vos questions."
-      />
+  name="/page-clim/entretien-climatisation-rs-presta-valence.webp"
+  alt="Technicien RS PRESTA nettoyant un climatiseur mural à Valence"
+  title="Climatisation"
+  text="Nos experts en climatisation vous conseillent sur les meilleures solutions pour votre confort thermique. Installation, entretien et réparation de vos systèmes de climatisation à Valence et ses environs."
+/>
 
       <div className="flex lg:flex-row lg:px-0 px-8  flex-col container mx-auto justify-center items-center mt-12 gap-14">
-        <Image
-          src="/page-clim/clim-clean.webp"
-          alt="Installation Plomberie"
-          width={500}
-          height={500}
-          className="lg:w-[36%] h-full object-cover rounded-lg"
-        />
+      <Image
+  src="/page-clim/entretien-climatisation-valence-rs-presta.webp"
+  alt="Technicien RS PRESTA effectuant l’entretien d’une climatisation murale à Valence"
+  width={500}
+  height={500}
+  className="lg:w-[36%] h-full object-cover rounded-lg"
+  loading="lazy"
+  title="Entretien de climatisation à Valence par RS PRESTA"
+/>
         <div className="space-y-6 max-w-xl">
           {/* Titre Section */}
           <div className="flex items-center">
@@ -82,40 +81,42 @@ export default function page() {
             {`Vous souhaitez vous orienter vers la pose d’un climatiseur mural réversible ? Ces systèmes pompe à chaleur air-air sont considérés comme les moins énergivores. Selon le nombre de pièces que vous climatisez, vous pouvez choisir un climatiseur monosplit (une pièce) ou multisplit (plusieurs pièces). `}
           </p>
           <div className="flex lg:flex-row flex-col">
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src="/page-clim/single-clim.webp"
-                alt="Installation Plomberie"
-                width={500}
-                height={500}
-                className="w-40 h-40 object-contain   rounded-lg mx-auto"
-              />
-              <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-                Monosplit
-              </h4>
-              <p className="text-center mt-2">
-                Ce système comprend une unité extérieure et une unité intérieure
-                pour rafraîchir ou chauffer la pièce.
-              </p>
-            </div>
+   
+  <div className="mx-auto flex flex-col justify-center">
+    <Image
+      src="/page-clim/climatisation-monosplit-installation-rs-presta-valence.webp"
+      alt="Icône représentant un système de climatisation monosplit installé par RS PRESTA à Valence"
+      width={500}
+      height={500}
+      className="w-40 h-40 object-contain rounded-lg mx-auto"
+    />
+    <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
+      Monosplit
+    </h4>
+    <p className="text-center mt-2">
+      Ce système comprend une unité extérieure et une unité intérieure
+      pour rafraîchir ou chauffer une seule pièce.
+    </p>
+  </div>
 
-            <div className="mx-auto flex flex-col justify-center">
-              <Image
-                src="/page-clim/multi-clim.webp"
-                alt="Installation Plomberie"
-                width={500}
-                height={500}
-                className="w-40 h-40  object-contain rounded-lg mx-auto"
-              />
-              <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
-                Multisplit
-              </h4>
-              <p className="text-center mt-2">
-                Cet équipement est composé d’une unité extérieure et de
-                plusieurs unités intérieures réparties dans votre habitation.
-              </p>
-            </div>
-          </div>
+  
+  <div className="mx-auto flex flex-col justify-center">
+    <Image
+      src="/page-clim/climatisation-multisplit-installation-rs-presta-valence.webp"
+      alt="Icône représentant un système de climatisation multisplit installé par RS PRESTA à Valence"
+      width={500}
+      height={500}
+      className="w-40 h-40 object-contain rounded-lg mx-auto"
+    />
+    <h4 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
+      Multisplit
+    </h4>
+    <p className="text-center mt-2">
+      Cet équipement comprend une unité extérieure reliée à plusieurs unités
+      intérieures pour chauffer ou rafraîchir plusieurs pièces.
+    </p>
+  </div>
+</div>
 
           <h5 className="text-2xl font-extrabold mt-6 max-w-xl mx-auto text-center">
             {`Les 5 étapes clés pour réussir l'installation d'une climatisation`}

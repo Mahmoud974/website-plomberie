@@ -7,13 +7,14 @@ export default function NotFound() {
     <div className="flex flex-col min-h-screen items-center justify-center bg-[#0A2A3D] text-gray-800 gap-4">
       <div className="text-center">
         <div>
-          <Image
-            src="/page-error/404.webp"
-            alt="Page non trouvée"
-            className="w-2/3 h-auto mx-auto"
-            width={700}
-            height={700}
-          />
+        <Image
+  src="/page-error/illustration-erreur-404-site-rs-presta.webp"
+  alt="Illustration d’un robot indiquant une erreur 404 sur le site RS PRESTA"
+  className="w-2/3 h-auto mx-auto"
+  width={700}
+  height={700}
+  priority
+/>
         </div>
       
         <Link

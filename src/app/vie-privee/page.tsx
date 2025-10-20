@@ -8,11 +8,11 @@ export default function PrivacyPolicyPage() {
     <>
       <Menu />
       <Banner
-        name="/page-mentions-legales/privacy.webp"
-        alt="Politique de Confidentialité"
-        title="Vie privée"
-        text="Nous respectons la confidentialité de vos données personnelles. Les informations collectées sont utilisées uniquement pour répondre à vos demandes et améliorer nos services."
-      />
+  name="/page-mentions-legales/protection-donnees-rgpd-rs-presta-valence.webp"
+  alt="Cadenas doré posé sur un clavier symbolisant la protection des données personnelles et la conformité RGPD chez RS PRESTA à Valence"
+  title="Vie privée & Protection des données"
+  text="Chez RS PRESTA, la confidentialité de vos données est une priorité. Conformément au RGPD, vos informations personnelles sont utilisées uniquement pour le traitement de vos demandes et l’amélioration de nos services."
+/>
 
       <div className="container mx-auto mt-12 px-6">
         <h2 className="text-3xl font-bold text-center mb-6">

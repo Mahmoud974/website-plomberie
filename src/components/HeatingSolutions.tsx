@@ -5,31 +5,35 @@ export default function HeatingSolutions() {
   const solutions = [
     {
       title: "Pompe à chaleur",
-      image: "/mini-menu/pompe-a-chaleur.webp",
+      image: "/mini-menu/installation-pompe-a-chaleur-air-eau-valence-svb-presta.webp",
       link: "/pompes-a-chaleur",
       description:
-        "Profitez de l’aérothermie pour chauffer efficacement votre intérieur en utilisant l’air, une énergie renouvelable. Que ce soit une pompe à chaleur air/air ou air/eau, trouvez la solution adaptée à votre logement.",
+        "Profitez de l’aérothermie pour chauffer efficacement votre intérieur grâce à une pompe à chaleur air/air ou air/eau. Une solution écologique et économique adaptée à votre logement à Valence et ses environs.",
+      alt: "Installation de pompe à chaleur air/eau par SVB PRESTA à Valence",
     },
     {
       title: "Chauffage",
-      image: "/mini-menu/chauffage.webp",
+      image: "/mini-menu/systeme-de-chauffage-economique-valence-svb-presta.webp",
       link: "/chauffage",
       description:
-        "Profitez d’un chauffage performant et économique, alliant confort et efficacité énergétique. Que vous optiez pour une solution au bois, au gaz ou aux énergies renouvelables, bénéficiez d’une chaleur douce et homogène tout en réduisant votre empreinte carbone.",
+        "Bénéficiez d’un chauffage performant et économique, qu’il soit au bois, au gaz ou à énergie renouvelable. SVB PRESTA installe des systèmes de chauffage efficaces à Valence pour un confort optimal.",
+      alt: "Système de chauffage performant installé par SVB PRESTA à Valence",
     },
     {
       title: "Climatisation",
-      image: "/mini-menu/clim.webp",
+      image: "/mini-menu/climatisation-reversible-installation-valence-svb-presta.webp",
       link: "/climatisation",
       description:
-        "Optimisez votre confort en toute saison avec une climatisation performante et écoénergétique. Rafraîchissez votre intérieur en été et bénéficiez d’un air sain et agréable grâce aux dernières technologies adaptées à votre espace.",
+        "Rafraîchissez et chauffez votre logement en toute saison avec une climatisation réversible installée par SVB PRESTA à Valence. Alliez confort, économies d’énergie et qualité d’air intérieur.",
+      alt: "Climatisation réversible installée par SVB PRESTA à Valence",
     },
     {
       title: "Plomberie",
-      image: "/mini-menu/plomberie.webp",
+      image: "/mini-menu/travaux-plomberie-installation-salle-de-bain-valence-svb-presta.webp",
       link: "/plomberie",
       description:
-        "Assurez un réseau de plomberie fiable et performant pour votre confort au quotidien. De l’installation à l’entretien, nous vous accompagnons pour garantir une distribution efficace en eau et des équipements adaptés à vos besoins.",
+        "De l’installation à la rénovation, confiez vos travaux de plomberie à SVB PRESTA à Valence. Bénéficiez d’une distribution d’eau fiable et d’un entretien complet pour vos équipements sanitaires.",
+      alt: "Travaux de plomberie et installation de salle de bain par SVB PRESTA à Valence",
     },
   ];
 
@@ -44,10 +48,11 @@ export default function HeatingSolutions() {
             <Link href={solution.link}>
               <Image
                 src={solution.image}
-                alt={"image de " + solution.title}
+                alt={solution.alt}
                 width={500}
                 height={500}
                 className="w-full h-48 object-cover"
+                loading="lazy"
               />
               <div className="p-5">
                 <h3 className="text-lg font-bold text-gray-900">

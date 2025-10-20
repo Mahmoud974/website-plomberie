@@ -15,11 +15,12 @@ export default function page() {
     <>
       <Menu />
       <Banner
-        name="/home/home.webp"
-        alt="Image d'accueil parlant avec une femme de la prestation "
-        title="Accueil"
-        text="L’été arrive à grands pas ! Préparez-vous aux fortes chaleurs en installant un système de climatisation adapté à votre maison. ☀️❄️"
-      />
+  name="/home/plombier-intervention-domicile-rs-presta-valence.webp"
+  alt="Plombier expliquant l'installation d'un système de climatisation à une cliente à Valence"
+  title="Installation de climatisation à domicile"
+  text="L’été arrive à grands pas ! Préparez-vous aux fortes chaleurs en installant un système de climatisation adapté à votre maison. ☀️❄️"
+/>
+
 
       <HomeIcons />
 
@@ -33,13 +34,15 @@ export default function page() {
       </div>
 
       <div className="flex lg:flex-row lg:px-0 px-8 flex-col container mx-auto justify-center items-center mt-12 lg:gap-28 gap-12">
-        <Image
-          src="/home/man-works.webp"
-          alt="Image d'un homme qui répare la plomberie"
-          width={500}
-          height={500}
-          className="lg:w-[36%] h-full object-cover rounded-lg"
-        />
+      <Image
+  src="/home/plombier-reparation-evier-cuisine-valence.webp"
+  alt="Plombier réparant un évier de cuisine dans une maison à Valence"
+  title="Plombier à domicile intervenant sur un évier de cuisine à Valence"
+  width={500}
+  height={500}
+  className="lg:w-[36%] h-full object-cover rounded-lg"
+/>
+
         <QuestionsReponses />
       </div>
 

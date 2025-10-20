@@ -7,23 +7,15 @@ import Menu from "@/components/Menu";
 import React, { useState } from "react";
 
 export default function ContactPage() {
-  // État pour gérer l'envoi du formulaire
   const [submitted, setSubmitted] = useState(false);
-  // Référence aux champs du formulaire
   const formRef = React.useRef<HTMLFormElement | null>(null);
 
-  // Fonction de gestion de soumission du formulaire
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simuler l'envoi du formulaire
     setSubmitted(true);
-    // Réinitialiser l'état après 3 secondes (pour simuler un délai de soumission)
     setTimeout(() => {
       setSubmitted(false);
-      // Réinitialiser les champs du formulaire
-      if (formRef.current) {
-        formRef.current.reset();
-      }
+      formRef.current?.reset();
     }, 3000);
   };
 
@@ -31,178 +23,139 @@ export default function ContactPage() {
     <>
       <Menu />
 
-      {/* Bannière */}
-      <div>
-        <Banner
-          name="/contact.jpg"
-          alt="Image d'une cliente au téléphone"
-          title="Nous contacter"
-          text="Besoin d'un devis ou d'informations ? Remplissez notre formulaire et nous vous répondrons rapidement !"
-        />
+      <Banner
+        name="/page-contact/contact-plombier-chauffage-valence-rs-presta.webp"
+        alt="Téléphone de contact de RS PRESTA, plombier chauffagiste à Valence, pour devis et dépannage rapide"
+        title="Contactez RS PRESTA à Valence"
+        text="Besoin d’un devis, d’un dépannage ou d’informations sur nos services ? Contactez RS PRESTA, entreprise de plomberie et de chauffage à Valence. Notre équipe réactive vous répond rapidement pour toutes vos demandes dans la Drôme."
+      />
 
-        {/* Formulaire de contact */}
-        <div className="max-w-4xl mx-auto mt-10 p-8 bg-gray-100 shadow-lg rounded-lg">
-          {!submitted ? (
-            <form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              className="grid grid-cols-1 md:grid-cols-2 gap-6"
-            >
-              {/* Nom */}
-              <div className="col-span-1">
-                <label className="block font-medium">Nom *</label>
-                <input
-                  type="text"
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  placeholder="Votre nom"
-                  required
-                />
-              </div>
+      
+      <section className="  py-16 px-6">
+        <div className="max-w-3xl mx-auto  overflow-hidden">
+          <div className="p-8 md:p-12">
+            <h2 className="text-3xl font-extrabold text-gray-800 mb-6 text-center">
+              Envoyez-nous un message
+            </h2>
+            <p className="text-gray-600 text-center mb-10">
+              Nous vous répondrons sous 24 heures. Vous pouvez aussi nous appeler pour un dépannage rapide.
+            </p>
 
-              {/* Téléphone */}
-              <div className="col-span-1">
-                <label className="block font-medium">Téléphone *</label>
-                <input
-                  type="tel"
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  placeholder="Votre téléphone"
-                  required
-                />
-              </div>
-
-              {/* Email */}
-              <div className="col-span-2">
-                <label className="block font-medium">Email</label>
-                <input
-                  type="email"
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  placeholder="Votre email"
-                />
-              </div>
-
-              {/* Type de service */}
-              <div className="col-span-1">
-                <label className="block font-medium">Type de service</label>
-                <div className="flex flex-col space-y-2">
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Installation
-                  </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Entretien
-                  </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Dépannage
-                  </label>
+            {!submitted ? (
+              <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
+               
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block font-semibold text-gray-700 mb-2">
+                      Nom <span className="text-yellow-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Votre nom complet"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-semibold text-gray-700 mb-2">
+                      Téléphone <span className="text-yellow-500">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="Votre numéro"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* Type de produit */}
-              <div className="col-span-1">
-                <label className="block font-medium">Type de produit</label>
-                <div className="flex flex-col space-y-2">
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Chauffage
+                {/* Email */}
+                <div>
+                  <label className="block font-semibold text-gray-700 mb-2">
+                    Email
                   </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Climatisation
-                  </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Pompe à chaleur
-                  </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Plomberie
-                  </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> VMC
-                  </label>
-                  <label>
-                    <input type="checkbox" className="mr-2" /> Puits canadien
-                  </label>
+                  <input
+                    type="email"
+                    placeholder="Votre adresse e-mail (facultatif)"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"
+                  />
                 </div>
-              </div>
 
-              {/* Adresse */}
-              <div className="col-span-2">
-                <label className="block font-medium">Adresse *</label>
-                <input
-                  type="text"
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  placeholder="Rue, ville, code postal"
-                  required
-                />
-              </div>
+                {/* Type de demande */}
+                <div>
+                  <label className="block font-semibold text-gray-700 mb-2">
+                    Type de demande
+                  </label>
+                  <select
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Sélectionnez un service
+                    </option>
+                    <option>Installation</option>
+                    <option>Entretien</option>
+                    <option>Dépannage</option>
+                    <option>Devis général</option>
+                  </select>
+                </div>
 
-              {/* Date du projet */}
-              <div className="col-span-1">
-                <label className="block font-medium">Date du projet</label>
-                <input
-                  type="date"
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                />
-              </div>
+                {/* Message */}
+                <div>
+                  <label className="block font-semibold text-gray-700 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    rows={5}
+                    placeholder="Décrivez votre besoin..."
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition"
+                  ></textarea>
+                </div>
 
-              {/* Disponibilités */}
-              <div className="col-span-1">
-                <label className="block font-medium">Vos disponibilités</label>
-                <input
-                  type="text"
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  placeholder="Indiquez vos créneaux"
-                />
-              </div>
+                {/* RGPD */}
+                <div className="flex items-center text-sm">
+                  <input
+                    type="checkbox"
+                    required
+                    className="mr-2 accent-yellow-500"
+                  />
+                  <span className="text-gray-700">
+                    J’accepte la{" "}
+                    <a
+                      href="/mentions-legales"
+                      className="text-yellow-600 underline hover:text-yellow-700"
+                    >
+                      politique de confidentialité
+                    </a>
+                    .
+                  </span>
+                </div>
 
-              {/* Message */}
-              <div className="col-span-2">
-                <label className="block font-medium">Message</label>
-                <textarea
-                  className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                  rows={4}
-                  placeholder="Votre message..."
-                ></textarea>
-              </div>
-
-              {/* Politique de confidentialité */}
-              <div className="col-span-2 flex items-center">
-                <input type="checkbox" className="mr-2" required />
-                <span>{`J'accepte les conditions particulières du site.`}</span>
-              </div>
-
-              {/* Bouton Envoyer */}
-              <div className="col-span-2">
+                {/* Bouton */}
                 <button
                   type="submit"
-                  className="w-full bg-yellow-500 text-white font-bold py-2 rounded-md hover:bg-yellow-600 transition"
+                  className="w-full py-3 bg-yellow-500 text-white font-bold rounded-xl hover:bg-yellow-600 transform hover:scale-[1.02] transition"
                 >
-                  Envoyer
+                  Envoyer le message
                 </button>
+              </form>
+            ) : (
+              <div className="text-center bg-green-500 text-white py-6 px-4 rounded-xl font-semibold text-lg shadow-md animate-fadeIn">
+                ✅ Merci ! Votre message a bien été envoyé.
               </div>
-            </form>
-          ) : (
-            // Message de confirmation après envoi
-            <div className="max-w-4xl mx-auto mt-6 p-4 bg-green-500 text-white text-center rounded-lg">
-              <span className="mr-2">✔️</span> Votre message a été envoyé avec
-              succès !
-            </div>
-          )}
+            )}
+          </div>
         </div>
-        <Certifications />
+      </section>
 
-        {/* Coordonnées */}
-        <div className="max-w-4xl mx-auto mt-10 p-8 bg-white shadow-lg rounded-lg text-center">
-          <h3 className="text-xl font-bold mb-4">Coordonnées</h3>
-          <p>
-            <strong>Adresse :</strong> 1 Rue Claude Bernard, 26100
-            Romans-sur-Isère, France
-          </p>
-          <p>
-            <strong>Téléphone :</strong> Appelez-nous
-          </p>
-          <p>
-            <strong>Email :</strong> Envoyez-nous un e-mail
-          </p>
-        </div>
-        <HeatingSolutions />
-      </div>
+      
+
+      <Certifications />
+      <HeatingSolutions />
       <Footer />
     </>
   );

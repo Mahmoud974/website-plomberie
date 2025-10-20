@@ -10,11 +10,11 @@ export default function page() {
     <>
       <Menu />
       <Banner
-        name="/page-mentions-legales/mentions.webp"
-        alt="Mentions Légales"
-        title="Mentions Légales"
-        text="Les informations recueillies sur ce site sont destinées à SVB PRESTA et seront utilisées dans le respect de la législation en vigueur sur la protection des données personnelles."
-      />
+  name="/page-mentions-legales/mentions-legales-rs-presta-valence.webp"
+  alt="Loupe sur le mot legal représentant les mentions légales de RS PRESTA à Valence"
+  title="Mentions légales"
+  text="Les informations recueillies sur ce site sont destinées à RS PRESTA et seront utilisées dans le respect de la législation en vigueur sur la protection des données personnelles."
+/>
 
       <div className="container mx-auto mt-12 px-6">
         <h2 className="text-3xl font-bold text-center mb-6">

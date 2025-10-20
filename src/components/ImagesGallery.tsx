@@ -6,9 +6,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images = [
-  "/page-pompes-a-chaleur/img-gallery/pompe-1.webp",
-  "/page-pompes-a-chaleur/img-gallery/pompe-2.webp",
-  "/page-pompes-a-chaleur/img-gallery/pompe-3.webp",
+  "/page-pompes-a-chaleur/img-gallery/installation-pompe-a-chaleur-viessmann-valence.webp",
+  "/page-pompes-a-chaleur/img-gallery/chaudiere-et-ballon-eau-chaude-installation-valence.webp",
+  "/page-pompes-a-chaleur/img-gallery/pompe-a-chaleur-viessmann-installation-svb-presta-valence.webp",
 ];
 
 export default function ImagesGallery() {
@@ -23,17 +23,15 @@ export default function ImagesGallery() {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (selectedImageRef.current === null) return;
 
-      if (event.key === "Escape") {
-        setSelectedImage(null);
-      } else if (event.key === "ArrowRight") {
+      if (event.key === "Escape") setSelectedImage(null);
+      else if (event.key === "ArrowRight")
         setSelectedImage((prev) =>
           prev !== null && prev < images.length - 1 ? prev + 1 : prev
         );
-      } else if (event.key === "ArrowLeft") {
+      else if (event.key === "ArrowLeft")
         setSelectedImage((prev) =>
           prev !== null && prev > 0 ? prev - 1 : prev
         );
-      }
     };
 
     document.addEventListener("keydown", handleKeyDown);
@@ -48,7 +46,7 @@ export default function ImagesGallery() {
           width={500}
           height={500}
           src={img}
-          alt={`Image de porfolio de pompe à chaleur n° ${index + 1}`}
+          alt={`Installation de pompe à chaleur à Valence - photo ${index + 1}`}
           className="w-80 h-80 object-cover cursor-pointer rounded-md"
           onClick={() => setSelectedImage(index)}
         />
@@ -70,16 +68,13 @@ export default function ImagesGallery() {
               className="w-full h-full flex items-center justify-center"
             >
               {images.map((img, index) => (
-                <div
-                  key={index}
-                  className="h-full flex items-center justify-center"
-                >
+                <div key={index} className="h-full flex items-center justify-center">
                   <Image
                     width={700}
                     height={700}
                     src={img}
+                    alt={`Installation de pompe à chaleur et ballon d’eau chaude par SVB PRESTA à Valence - image ${index + 1}`}
                     className="h-auto max-h-[80vh] object-contain rounded-lg"
-                    alt={`Image d'innstallation n° ${index + 1}`}
                   />
                 </div>
               ))}

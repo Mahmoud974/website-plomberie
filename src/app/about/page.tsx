@@ -12,11 +12,11 @@ export default function About() {
     <>
       <Menu />
       <Banner
-        name="/plomb-2.jpg"
-        alt="Image d'un plombier"
-        title="À Propos"
-        text="Notre entreprise de plomberie à Valence vous propose des services professionnels pour l’installation, la réparation et la maintenance de vos équipements sanitaires et de chauffage. "
-      />
+  name="/page-about/entreprise-plomberie-chauffage-valence-rs-presta.webp"
+  alt="Illustration symbolisant la communication et la proximité de l’entreprise RS PRESTA, experte en plomberie et chauffage à Valence"
+  title="À propos"
+  text="RS PRESTA, entreprise de plomberie et de chauffage à Valence, accompagne particuliers et professionnels pour l’installation, la réparation et la maintenance de leurs équipements. Fiabilité, réactivité et savoir-faire local au service de votre confort."
+/>
 
       <div className="container text-center mx-auto px-6 py-12 space-y-8">
         {/* Introduction */}
